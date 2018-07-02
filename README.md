@@ -1,5 +1,10 @@
-# README.md - Recursive Thinking Website - Technical Documents
+# Recursive Thinking Website - Tech Docs
 
-    So, this site, soon enough, will contain all the information you need to learn about, and start up both the Recursive Thinking Website and the Recursive Thinking Website BackEnd.
+    This Repository holds a simple website which describes how to get started contributing to the Recursive Website Project.
     
-    Good Luck, Padawan!
+    To Start, simply download (or git clone - if this process is comfortable for you) this repository to your computer, and open layout.html inside a local development server.
+    
+    To Download the Site from Github:
+    
+    
+    An extension similar to Live Server in VSCode would provide this functionality (open the page on a development server) if this is a process which is unfamiliar
