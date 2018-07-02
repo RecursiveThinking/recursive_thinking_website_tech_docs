@@ -1,0 +1,447 @@
+/* Layout CSS */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    /* font-size: 10px; */
+    /* margin: 0;
+    padding: 0; */
+}
+
+html {
+    background-color: #ececec;
+}
+
+body {
+    font-size: 10px;
+    /* margin: 0; */
+    /* padding: 0; */
+    /* width: 100vw; */
+    /* height: 100vh; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 1920px;
+    margin: 0 auto;
+    /* overflow: hidden; */
+}
+
+#mainWindow{
+    margin-top: 70px;
+    margin-left: 20%;
+    margin-bottom: 40px;
+}
+
+.content>nav {
+    text-align: center;
+}
+
+.mobileNav {
+    background-color: red;
+    display: block;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.content .searchBar {
+    text-align: center;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.input {
+    /* padding: 1rem 16rem 1rem 2rem; */
+    padding: 1rem 6rem 1rem 2rem;
+    margin-left: 2rem;
+    border-radius: 3rem;
+    border: .1rem solid #979797;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.ta-left {
+    text-align: left;
+}
+
+.card {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    border: solid 1px #c6c6c6;
+}
+
+/* general classes */
+
+.ttup {
+    text-transform: uppercase;
+}
+
+.ttlow {
+    text-transform: lowercase;
+}
+
+.fw100 {
+    font-weight: 100;
+}
+
+.fw300 {
+    font-weight: 300;
+}
+
+.fw500 {
+    font-weight: 500;
+}
+
+.fw700 {
+    font-weight: 700;
+}
+
+.fw900 {
+    font-weight: 900;
+}
+
+.colorGreen {
+    color: #00b371;
+}
+
+.colorGrayb9 {
+    color: #b9b9b9;
+}
+
+.colorGrayc9 {
+    color: #c9c9c9;
+}
+
+.colorBlack {
+    color: #000000;
+}
+
+.colorBlack06 {
+    color: #060606;
+}
+
+.colorGray42 {
+    color: #424041;
+}
+
+.colorGray55 {
+    color: #555555;
+}
+
+.colorGray64 {
+    color: #646464;
+}
+
+.colorGray66 {
+    color: #666666;
+}
+
+.colorWhiteff {
+    color: #ffffff;
+}
+
+.btnColorGreenBright {
+    background-color: #00b371;
+}
+
+.btnColorGreenForest {
+    background-color: #006842;
+}
+
+.btnColorGreenDark {
+    background-color: #2d3134;
+}
+
+.alert {
+    margin: 1rem 0 0 0;
+    width: 100%;
+    padding: 2rem;
+    color: #ffffff;
+}
+
+.fc-alert{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+}
+
+.error {
+    background-color: red;
+}
+
+.warn {
+    background-color: orange;
+}
+
+.status {
+    background-color: #00b371;
+}
+
+
+
+
+
+/* Flexbox Responsive Grid */
+
+/* Grid Def */
+
+.grid {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+
+/* Grid Justify */
+
+.gridRight {
+    justify-content: flex-end;
+}
+
+.gridCenter {
+    justify-content: center;
+}
+
+/* Grid Gutters */
+
+.gutters {
+    margin-left: -3em;
+}
+
+.gutters .cell {
+    /* padding-left: 1em; */
+    padding-left: 3em;
+}
+
+/* Container Vertical Center*/
+
+.contVertCenter {
+    align-items: center;
+}
+
+/* Grid TextAlign */
+
+.u-textCenter {
+    text-align: center;
+}
+
+.cell {
+    flex: 1;
+}
+
+.content {
+    /* padding: 0.8em 1em 0; */
+    padding: 0.8rem 1rem 0;
+    /* margin-bottom: 1rem; */
+    margin-bottom: 3rem;
+}
+
+.item-textCenter {
+    text-align: center;
+}
+
+.item-textRight {
+    text-align: right;
+}
+
+/* Alignment per cell */
+
+.cell-top {
+    align-self: flex-start;
+}
+
+.cell-bottom {
+    align-self: flex-end;
+}
+
+.cell-center {
+    align-self: center;
+}
+
+/* BASE GRID CLASSES - ALL  */
+
+/* MOBILE FIRST!!!! */
+
+.cols-2>.cell {
+    flex: 0 0 100%;
+}
+
+.cols-3>.cell {
+    flex: 0 0 100%;
+}
+
+.cols-4>.cell {
+    flex: 0 0 100%;
+}
+
+.cols-6>.cell {
+    /* flex: 0 0 calc(50% - 1em); */
+    flex: 0 0 calc(100% - 1em);
+}
+
+.cols-12>.cell {
+    /* flex: 0 0 calc(33.3333% - 1em); */
+    flex: 0 0 calc(100% - 1em);
+}
+
+/* One of -- columns*/
+
+.twothirds>.cell:first-of-type,
+.half>.cell:first-of-type,
+.third>.cell:first-of-type,
+.quarter>.cell:first-of-type {
+    flex: 0 0 100%;
+}
+
+.sixth>.cell:first-of-type {
+    /* flex: 0 0 50%; */
+    flex: 0 0 100%;
+}
+
+.fit>.cell {
+    flex: 1;
+}
+
+.full>.cell {
+    flex: 0 0 100%;
+}
+
+@media only screen and (max-width: 425px) and (min-width: 320px) {
+    * {
+        font-size: 7px;
+    }
+}
+
+/* Phone L 426px to 479 */
+
+@media only screen and (max-width: 480px) and (min-width: 426px) {
+    * {
+        font-size: 7.5px;
+    }
+}
+
+/* responsive grid after 480px */
+
+@media only screen and (min-width: 480px) {
+    * {
+        font-size: 8px;
+    }
+    .cols-4>.cell {
+        flex: 0 0 calc(50% - 1em);
+    }
+    .cols-6>.cell {
+        flex: 0 0 calc(33.3333% - 1em);
+    }
+    .cols-12>.cell {
+        flex: 0 0 calc(16.6666% - 1em);
+    }
+    .twothirds>.cell:first-of-type {
+        flex: 0 0 66.67%;
+    }
+    .half>.cell:first-of-type {
+        /* flex: 0 0 50%; */
+        flex: 0 0 100%;
+    }
+    .sixth>.cell:first-of-type {
+        flex: 0 0 30%;
+    }
+    .quarter>.cell:first-of-type {
+        flex: 0 0 50%;
+    }
+    .third>.cell:first-of-type {
+        flex: 0 0 100%;
+    }
+    /* .content>.logo>img {
+        height: 5.25rem;
+        width: auto;
+    } */
+}
+
+/* Tablet  480 to 768 */
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+    * {
+        /* font-size: 8.5px; */
+        /* overflow: auto; */
+    }
+    .mobileNav {
+        display: block;
+    }
+    .desktopNav {
+        display: none;
+    }
+    #mainWindow{
+        margin-left: 20%;
+        margin-bottom: 40px;
+        margin-top: 112px;
+    }
+}
+
+/* responsive grid after 768px */
+
+@media only screen and (min-width: 768px) {
+    * {
+        font-size: 8.5px;
+    }
+    .cols-2>.cell,
+    .cols-3>.cell,
+    .cols-4>.cell,
+    .cols-6>.cell,
+    .cols-12>.cell {
+        flex: 1;
+    }
+    .twothirds>.cell:first-of-type {
+        flex: 0 0 66.67%;
+    }
+    .half>.cell:first-of-type {
+        flex: 0 0 50%;
+    }
+    .sixth>.cell:first-of-type {
+        flex: 0 0 16.6666%;
+    }
+    .third>.cell:first-of-type {
+        flex: 0 0 33.3333%;
+    }
+    .quarter>.cell:first-of-type {
+        flex: 0 0 25%;
+    }
+    .gutters.nested .cell:first-of-type .content {
+        margin-right: 0;
+    }
+    /* .content>.logo>img {
+        height: 7rem;
+        width: auto;
+    }
+    .content>.logo {
+        text-align: left;
+    } */
+    .content>nav {
+        text-align: right;
+    }
+    .content .searchBar {
+        text-align: right;
+    }
+}
+
+/* Laptop S 768 to 1024 */
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {}
+
+/* Laptop M 1440 */
+
+@media only screen and (max-width: 1440px) and (min-width: 1025px) {}
+
+/* All others */
+
+/* @media (min-width: 1440px) { */
+
+@media only screen and (min-width: 1440px) {
+    * {
+        font-size: 10px;
+    }
+}
