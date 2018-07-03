@@ -6,5 +6,6 @@
     
     To Download the Site from Github:
     
+        (Instructions/Picture Coming Soon)
     
     An extension similar to Live Server in VSCode would provide this functionality (open the page on a development server) if this is a process which is unfamiliar
