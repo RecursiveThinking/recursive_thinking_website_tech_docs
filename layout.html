@@ -20,18 +20,21 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./css/header.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./css/footer.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./css/sidebar.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/homeScreen.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./css/whoWeAre.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/upcomingLessons.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/gettingStarted.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./css/frontEnd.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./css/backEnd.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/recursiveDirectory.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/editProfile.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/responsive.css" />
 
     <script src="./scripts/global.js"></script>
     <!-- templates -->
     <link id="whoWeAre" href="templates/whoWeAre.html" type="text/html" rel="import">
     <link id="gettingStarted" href="templates/gettingStarted.html" type="text/html" rel="import">
+    <!-- children of gettingStarted -->
+    <link id="gettingStartedGetConnected" href="templates/gettingStartedGetConnected.html" type="text/html" rel="import">
+    <link id="gettingStartedGetPreReqs" href="templates/gettingStartedGetPreReqs.html" type="text/html" rel="import">
+    <link id="gettingStartedGetTheProject" href="templates/gettingStartedGetTheProject.html" type="text/html" rel="import">
+    <!-- end children of gettingStarted -->
     <link id="frontEnd" href="templates/frontEnd.html" type="text/html" rel="import">
     <link id="backEnd" href="templates/backEnd.html" type="text/html" rel="import">
     <script src="./scripts/redirect.js"></script>
@@ -50,16 +53,36 @@
     </header>
     <aside class="sidebar">
         <div class="sidebarLinksContainer">
-            <article class="sidebar-item" data-pageId="whoWeAre">
+            <article id="btnSidebarWhoWeAre" class="sidebar-category" data-pageId="whoWeAre">
+                <span><i class="fa fa-plus-square"></i></span>
                 <h2 class="sidebarTitle">Who We Are</h2>
             </article>
-            <article class="sidebar-item" data-pageId="gettingStarted">
+            
+            <article id="btnSidebarGettingStarted" class="sidebar-category" data-pageId="gettingStarted">
+                <span><i class="fa fa-plus-square"></i></span>
                 <h2 class="sidebarTitle">Getting Started</h2>
             </article>
-            <article id="btnSidebarVoteLessons" class="sidebar-item" data-pageId="frontEnd">
+                <div class="sidebar-category-children">    
+                    <article id="btnSidebarGettingStartedGetConnected" class="sidebar-category" data-pageId="gettingStartedGetConnected">
+                        <span><i class="fa fa-square-o"></i></span>
+                        <h3 class="sidebarTitle">Get Connected</h3>
+                    </article>
+                    <article id="btnSidebarGettingStartedGetPreReqs" class="sidebar-category" data-pageId="gettingStartedGetPreReqs">
+                        <span><i class="fa fa-square-o"></i></span>
+                        <h3 class="sidebarTitle">Get Prerequisites</h3>
+                    </article>
+                    <article id="btnSidebarGettingStartedGetTheProject" class="sidebar-category" data-pageId="gettingStartedGetTheProject">
+                        <span><i class="fa fa-square-o"></i></span>
+                        <h3 class="sidebarTitle">Get the Project</h3>
+                    </article>
+                </div>
+            </article>
+            <article id="btnSidebarFrontEnd" class="sidebar-category" data-pageId="frontEnd">
+                <span><i class="fa fa-plus-square"></i></span>
                 <h2 class="sidebarTitle">Front End</h2>
             </article>
-            <article id="btnSidebarInterviewPrep" class="sidebar-item" data-pageId="backEnd">
+            <article id="btnSidebarBackEnd" class="sidebar-category" data-pageId="backEnd">
+                <span><i class="fa fa-plus-square"></i></span>
                 <h2 class="sidebarTitle">Back End</h2>
             </article>
         </div>
@@ -86,7 +109,7 @@
             </div>
         </div>
     </footer>
-    <script src="./scripts/layout.js"></script>
+    <script type="application/javascript" src="./scripts/layout.js"></script>
     <!-- <script src="./templates/interviewPrep.js"></script> -->
 </body>
 

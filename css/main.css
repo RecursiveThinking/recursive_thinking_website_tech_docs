@@ -1,11 +1,6 @@
-/* Layout CSS */
-
 * {
     box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif;
-    /* font-size: 10px; */
-    /* margin: 0;
-    padding: 0; */
 }
 
 html {
@@ -14,16 +9,11 @@ html {
 
 body {
     font-size: 10px;
-    /* margin: 0; */
-    /* padding: 0; */
-    /* width: 100vw; */
-    /* height: 100vh; */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     max-width: 1920px;
     margin: 0 auto;
-    /* overflow: hidden; */
 }
 
 #mainWindow{
@@ -54,7 +44,6 @@ body {
 }
 
 .input {
-    /* padding: 1rem 16rem 1rem 2rem; */
     padding: 1rem 6rem 1rem 2rem;
     margin-left: 2rem;
     border-radius: 3rem;
@@ -182,10 +171,6 @@ body {
     background-color: #00b371;
 }
 
-
-
-
-
 /* Flexbox Responsive Grid */
 
 /* Grid Def */
@@ -194,7 +179,6 @@ body {
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
 }
 
 /* Grid Justify */
@@ -235,9 +219,7 @@ body {
 }
 
 .content {
-    /* padding: 0.8em 1em 0; */
     padding: 0.8rem 1rem 0;
-    /* margin-bottom: 1rem; */
     margin-bottom: 3rem;
 }
 
@@ -309,139 +291,4 @@ body {
 
 .full>.cell {
     flex: 0 0 100%;
-}
-
-@media only screen and (max-width: 425px) and (min-width: 320px) {
-    * {
-        font-size: 7px;
-    }
-}
-
-/* Phone L 426px to 479 */
-
-@media only screen and (max-width: 480px) and (min-width: 426px) {
-    * {
-        font-size: 7.5px;
-    }
-}
-
-/* responsive grid after 480px */
-
-@media only screen and (min-width: 480px) {
-    * {
-        font-size: 8px;
-    }
-    .cols-4>.cell {
-        flex: 0 0 calc(50% - 1em);
-    }
-    .cols-6>.cell {
-        flex: 0 0 calc(33.3333% - 1em);
-    }
-    .cols-12>.cell {
-        flex: 0 0 calc(16.6666% - 1em);
-    }
-    .twothirds>.cell:first-of-type {
-        flex: 0 0 66.67%;
-    }
-    .half>.cell:first-of-type {
-        /* flex: 0 0 50%; */
-        flex: 0 0 100%;
-    }
-    .sixth>.cell:first-of-type {
-        flex: 0 0 30%;
-    }
-    .quarter>.cell:first-of-type {
-        flex: 0 0 50%;
-    }
-    .third>.cell:first-of-type {
-        flex: 0 0 100%;
-    }
-    /* .content>.logo>img {
-        height: 5.25rem;
-        width: auto;
-    } */
-}
-
-/* Tablet  480 to 768 */
-
-@media only screen and (max-width: 768px) and (min-width: 481px) {
-    * {
-        /* font-size: 8.5px; */
-        /* overflow: auto; */
-    }
-    .mobileNav {
-        display: block;
-    }
-    .desktopNav {
-        display: none;
-    }
-    #mainWindow{
-        margin-left: 20%;
-        margin-bottom: 40px;
-        margin-top: 112px;
-    }
-}
-
-/* responsive grid after 768px */
-
-@media only screen and (min-width: 768px) {
-    * {
-        font-size: 8.5px;
-    }
-    .cols-2>.cell,
-    .cols-3>.cell,
-    .cols-4>.cell,
-    .cols-6>.cell,
-    .cols-12>.cell {
-        flex: 1;
-    }
-    .twothirds>.cell:first-of-type {
-        flex: 0 0 66.67%;
-    }
-    .half>.cell:first-of-type {
-        flex: 0 0 50%;
-    }
-    .sixth>.cell:first-of-type {
-        flex: 0 0 16.6666%;
-    }
-    .third>.cell:first-of-type {
-        flex: 0 0 33.3333%;
-    }
-    .quarter>.cell:first-of-type {
-        flex: 0 0 25%;
-    }
-    .gutters.nested .cell:first-of-type .content {
-        margin-right: 0;
-    }
-    /* .content>.logo>img {
-        height: 7rem;
-        width: auto;
-    }
-    .content>.logo {
-        text-align: left;
-    } */
-    .content>nav {
-        text-align: right;
-    }
-    .content .searchBar {
-        text-align: right;
-    }
-}
-
-/* Laptop S 768 to 1024 */
-
-@media only screen and (max-width: 1024px) and (min-width: 769px) {}
-
-/* Laptop M 1440 */
-
-@media only screen and (max-width: 1440px) and (min-width: 1025px) {}
-
-/* All others */
-
-/* @media (min-width: 1440px) { */
-
-@media only screen and (min-width: 1440px) {
-    * {
-        font-size: 10px;
-    }
 }
