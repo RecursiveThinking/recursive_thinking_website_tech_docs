@@ -5,8 +5,12 @@ class api {
     }
 
     init() {
-        const sidebarItems = document.getElementsByClassName('sidebar-item');
+        // const sidebarItems = document.getElementsByClassName('sidebar-category');
+        const sidebarItems = document.querySelectorAll('.sidebar-category');
+        console.log(sidebarItems);
         const sideBarItemsArray = Array.from(sidebarItems);
+        console.log('Array');
+        console.log(sidebarItems);
         sideBarItemsArray.forEach((item) => {
             item.addEventListener('click', () => {
                 const pageId = item.getAttribute('data-pageId');
