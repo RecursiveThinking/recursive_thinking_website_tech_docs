@@ -1,8 +1,11 @@
 (function() {
 
     function appendPage(pageId) {
-        const dashboardHTML = document.getElementById(pageId).import;
-        const template = dashboardHTML.getElementById(pageId+'HTML').cloneNode(true);
+        console.log('pageId: ', pageId);
+        const mainHTML = document.getElementById(pageId).import;
+        console.log(mainHTML);
+        const template = mainHTML.getElementById(pageId+'HTML').cloneNode(true);
+        console.log(template);
         const main = document.getElementById('main-content');
         main.innerHTML = '';
         main.appendChild(template);
@@ -14,6 +17,7 @@
     // Appends HTML template, then runs associated setup scripts
     function hashRouting() {
         const location = window.location.hash.replace('#','');
+        console.log('LOCATION', location);
         switch(location){
             case 'whoWeAre':
                 appendPage('whoWeAre');
@@ -22,6 +26,18 @@
             case 'gettingStarted':
                 appendPage('gettingStarted');
                 setUpGettingStarted();
+                break;
+            case 'gettingStartedGetConnected':
+                appendPage('gettingStartedGetConnected')
+                setUpGettingStartedGetConnected()
+                break;
+            case 'gettingStartedGetPreReqs':
+                appendPage('gettingStartedGetPreReqs')
+                setUpGettingStartedGetPreReqs()
+                break;
+            case 'gettingStartedGetTheProject':
+                appendPage('gettingStartedGetTheProject')
+                setUpGettingStartedGetTheProject()
                 break;
             case 'frontEnd':
                 appendPage('frontEnd');
@@ -32,7 +48,9 @@
                 setUpBackEnd();
                 break;
             default:
-                break;
+                // appendPage('whoWeAre');
+                // setUpWhoWeAre();
+                // break;
         }
     }
 
