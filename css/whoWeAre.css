@@ -3,21 +3,9 @@
     padding: 0;
 }
 
-#dashboardHTML {
+#whoWeAreHTML {
     background-color: #eeeeee;
-    padding: 3rem 3rem 3rem 3rem;
-}
-
-.cell > article {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-}
-
-.cell > article h4 {
-    font-size: 2.4rem;
-    letter-spacing: 1.4px;
-    margin-bottom: .9rem;
+    padding: 1rem 3rem 3rem 3rem;
 }
 
 #dashboardHTML .content {
