@@ -43,14 +43,22 @@
                 appendPage('frontEnd');
                 setUpFrontEnd();
                 break;
+            case 'frontEndTemplater':
+                appendPage('frontEndTemplater');
+                setUpFrontEndTemplater();
+                break;
             case 'backEnd':
                 appendPage('backEnd');
                 setUpBackEnd();
                 break;
+            case 'backEndYamlConfiguration':
+                appendPage('backEndYamlConfiguration');
+                setUpBackEndYamlConfiguration();
+                break;
             default:
-                // appendPage('whoWeAre');
-                // setUpWhoWeAre();
-                // break;
+                appendPage('whoWeAre');
+                setUpWhoWeAre();
+                break;
         }
     }
 
