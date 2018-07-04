@@ -22,8 +22,56 @@ body {
     margin-bottom: 40px;
 }
 
-.content>nav {
+.content > nav {
     text-align: center;
+}
+
+.cell > article {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.cell > article h4 {
+    font-size: 2.4rem;
+    letter-spacing: 1.4px;
+    margin-bottom: .9rem;
+}
+
+.cell > .siteMap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1rem 1rem 2rem 0rem;
+    padding: 0;
+}
+
+.cell > .siteMap > ul {
+    list-style-type: none;
+}
+
+.cell > .siteMap > ul > li a{
+    text-decoration: none;
+}
+
+.cell > .siteMap > ul > li {
+    display: inline-block;
+    /* margin-left: .5rem; */
+}
+
+.cell > .siteMap > ul > li > a {
+    font-size: 1.5rem;
+}
+
+.cell > .siteMap > ul > li+li:before {
+    padding: 1.25rem;
+    font-size: 1.5rem;
+    color: darkgrey;
+    content: "/\00a0";
+}
+
+.cell > .siteMap > ul > li:first-of-type {
+    margin-left: 0;
 }
 
 .mobileNav {
