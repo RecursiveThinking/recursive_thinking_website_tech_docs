@@ -3,9 +3,10 @@
     padding: 0;
 }
 
-#voteForLessonHTML {
+#frontEndHTML, #frontEndTemplaterHTML {
     /* min-height: 100vh; */
     background-color: #eeeeee;
+    padding: 1rem 3rem 3rem 3rem;
 }
 
 #voteForLessonHTML .content.container {
