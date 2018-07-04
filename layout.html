@@ -36,7 +36,9 @@
     <link id="gettingStartedGetTheProject" href="templates/gettingStartedGetTheProject.html" type="text/html" rel="import">
     <!-- end children of gettingStarted -->
     <link id="frontEnd" href="templates/frontEnd.html" type="text/html" rel="import">
+    <link id="frontEndTemplater" href="templates/frontEndTemplater.html" type="text/html" rel="import">
     <link id="backEnd" href="templates/backEnd.html" type="text/html" rel="import">
+    <link id="backEndYamlConfiguration" href="templates/backEndYamlConfiguration.html" type="text/html" rel="import">
     <script src="./scripts/redirect.js"></script>
 </head>
 
@@ -81,10 +83,22 @@
                 <span><i class="fa fa-plus-square"></i></span>
                 <h2 class="sidebarTitle">Front End</h2>
             </article>
+                <div class="sidebar-category-children">
+                    <article id="btnSidebarFrontEndTemplater" class="sidebar-category" data-pageId="frontEndTemplater">
+                        <span><i class="fa fa-square-o"></i></span>
+                        <h3 class="sidebarTitle">Templater</h3>
+                    </article>
+                </div>
             <article id="btnSidebarBackEnd" class="sidebar-category" data-pageId="backEnd">
                 <span><i class="fa fa-plus-square"></i></span>
                 <h2 class="sidebarTitle">Back End</h2>
             </article>
+                <div class="sidebar-category-children">
+                    <article id="btnSidebarBackEndYAMLConfiguration" class="sidebar-category" data-pageId="backEndYamlConfiguration">
+                        <span><i class="fa fa-square-o"></i></span>
+                        <h3 class="sidebarTitle">Yaml Configuration</h3>
+                    </article>
+                </div>
         </div>
     </aside>
     <div class="grid grow" id="mainWindow">
