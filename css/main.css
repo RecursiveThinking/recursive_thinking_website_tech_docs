@@ -116,7 +116,8 @@ body {
     margin: .25rem 0;
 }
 
-.cell > .card > ul {
+.cell > .card > ul,
+.cell > .card > ol {
     margin: .5rem 2rem;
 }
 
@@ -124,10 +125,13 @@ body {
     list-style-type: none;
 }
 
-.cell > .card > ul > li, .cell > .card > ul > li > a {
+.cell > .card > ul > li, .cell > .card > ul > li > a,
+.cell > .card > ul > li a,
+.cell > .card > ol > li, .cell > .card > ol > li > a,
+.cell > .card > ol > li a {
     font-size: 1.4rem;
     letter-spacing: .75px;
-    margin-top: 1rem;
+    margin: 1rem 0 0 0;
 }
 
 .cell > .card > h5 {
@@ -145,20 +149,25 @@ body {
 p {
     font-size: 1.4rem;
     letter-spacing: 1.1px;
-    margin-top: 1rem;
+    margin: 1rem 0 0 1.5rem;
 }
+
 /* general classes */
-
-
-.codeSnippet {
+.codeSnippetGitCommand {
     font-family: 'Courier New', Courier, monospace;
     font-style: normal;
     font-size: 1.5rem;
-    font-weight: 800;
+    font-weight: 600;
     color: red;
-    background-color: lightgrey;
-    padding: .25rem .5rem
+    background-color: rgba(235, 235, 235, 1);
+    margin: 0 2rem 0 .75rem;
+    padding: .125rem 1rem;
 }
+
+.codeSnippetGitCopy {
+    
+}
+
 .ttup {
     text-transform: uppercase;
 }

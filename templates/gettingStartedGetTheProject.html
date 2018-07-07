@@ -24,7 +24,7 @@
                         <p>
                             To work on the Recursive Thinking website project, you’ll need to transfer the project files from the Recursive Thinking GitHub repository to your computer.
                             <br><br>
-                            This will be accomplished by running the command <span class="codeSnippet">git clone</span> in your terminal/bash/windows CLI.
+                            This will be accomplished by running the command <span class="codeSnippetGitCommand">git clone</span> in your terminal/bash/windows CLI.
                             <br><br>
                             There are two different repositiories which you'll need to clone from the Recursive Thinking GitHub Page.                        </p>
                         <!-- <a href="https://github.com/RecursiveThinking" target="/">RecursiveThinking</a> -->
@@ -35,6 +35,64 @@
                             <li><a href="https://github.com/RecursiveThinking/recursive_thinking_server" target="/">recursive-thinking-server</a></li>
                         </ul>
                         <h5>How to Clone a repository from GitHub</h5>
+                        <ol>
+                            <li>
+                                <p>
+                                    First, from your terminal, run <span class="codeSnippetGitCommand">git --version</span>.  This command should return the version number of git that you downloaded and installed.  If it doesn't, you need to repeat the download and installation of Git. (See Get PreReqs)
+                                </p>
+                                <p>
+                                    If this command returns a version of Git that your machine is running, you are all set to continue!
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Second, make sure you are in the directory that you would like the repository to reside.  For Example, if you have a web projects directory - just make sure to navigate inside that folder before you start running the git commands.  This is important because when the git commands are executed, the repository will be located at the location of the current terminal.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Third - go to the the <a href="https://github.com/RecursiveThinking/recursive_thinking_website" target="/">Recursive Thinking Website</a> Github Page.
+                                </p>
+                                <p>
+                                    On the website's main page, under the status/statistics bar - and to the far right of the screen, you should see a green "Clone or Download" Button.
+                                </p>
+                                <p>
+                                    When this button is clicked, you'll see a modal pop up with an address, and most likely titled "Clone with Https".  This address will, depending on your configuration, be either in https:// or ssh.  Since https:// is the default protocol (and using ssh requires special setup), we'll cover how to use only https:// in this section.
+                                </p>
+                                <p>
+                                    The https:// address for the Recursive Thinking Website is: <a href="https://github.com/RecursiveThinking/recursive_thinking_website.git" target="/">https://github.com/RecursiveThinking/recursive_thinking_website.git</a>
+                                </p>
+                                <p>
+                                    Once you have this address, go back to your terminal, and command: <span class="codeSnippetGitCommand">git clone &lt;https://address&gt; </span>
+                                </p>
+                                <p>
+                                    for the Recursive Thinking Website, this would look like:
+                                </p>
+                                <p>
+                                    <span class="codeSnippetGitCommand">
+                                        git clone https://github.com/RecursiveThinking/recursive_thinking_website.git
+                                    </span>
+                                </p>
+                                <p>
+                                    After executing this command, you should see some additional status reports in your terminal, indicating the current progress, as well as the success/failure of this command.  Of course, we are looking for an indcator that this command was successful.  Additionally, if the command was successful, you should see a folder named "recursive-thinking-website" in the directory where you executed the git clone command.
+                                </p>
+                                <p>
+                                    If you don't get a successful clone, and you don't see the folder in your directory, please re-run these steps until you do.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Lastly, once the repository has been cloned locally, you can take the steps necessary to setup and run the website.
+                                </p>
+                                <p>
+                                    The Recursive Thinking website uses <a href="https://webpack.js.org/" target="/">Webpack</a> to compile all of the separate HTML, CSS and JavaScript files into a single page application.
+                                </p>
+                                <p>
+                                    Webpack uses <a href="https://www.npmjs.com/" target="/">Node Package Manager</a> (NPM) which is (define)
+                                </p>
+                            </li>
+                        </ol>
+                        
                     </article>
                 </div>
             </div>   
