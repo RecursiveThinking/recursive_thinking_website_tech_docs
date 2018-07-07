@@ -82,17 +82,28 @@
                             </li>
                             <li>
                                 <p>
-                                    Lastly, once the repository has been cloned locally, you can take the steps necessary to setup and run the website.
+                                    Last, once the repository has been cloned locally, you can take the steps necessary to setup and run the website.
                                 </p>
                                 <p>
                                     The Recursive Thinking website uses <a href="https://webpack.js.org/" target="/">Webpack</a> to compile all of the separate HTML, CSS and JavaScript files into a single page application.
                                 </p>
                                 <p>
-                                    Webpack uses <a href="https://www.npmjs.com/" target="/">Node Package Manager</a> (NPM) which is (define)
+                                    Webpack is a part of <a href="https://www.npmjs.com/" target="/">Node Package Manager</a> (NPM) which allows users from all over to share "building blocks" of JavaScript code.
+                                </p>
+                                <p>
+                                    In the Recursive Thinking Website folder, you'll see a file called package.json.  package.json contains all the npm modules needed to run the website.  To install these modules, make sure the terminal is in the recursive_thinking_website folder and run the Node command: <span class="codeSnippetGitCommand">npm install</span>.
+                                </p>
+                                <p>
+                                    If all the required node packages installed successfully, you should now see a "node_modules" folder in the recursive_thinking_website directory.  If you see this folder, the modules are successfully installed, if not please repeat the last step.
+                                </p>
+                                <p>
+                                    Once you have the node_modules folder, you just need to run one more command in your recursive_thinking_website directory - <span class="codeSnippetGitCommand">npm run start</span>
+                                </p>
+                                <p>
+                                    When this command is executed, there will be alot of output in the terminal, and after a few seconds, the site will build in Webpack, then it will open a tab in your default browser, at localhost://8000, and will load the website.
                                 </p>
                             </li>
                         </ol>
-                        
                     </article>
                 </div>
             </div>   
