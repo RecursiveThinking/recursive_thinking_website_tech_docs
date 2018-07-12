@@ -6,7 +6,7 @@ To Start, simply download (or git clone - if this process is comfortable for you
     
 ## To Clone the Project From Github:
     
-![GitHub Clone](_md/img/01_download_or_clone_from_github.jpg)
+![GitHub Clone](_md/img/01_download_or_clone_from_github.jpg?)
 
     The following terminal command requires a basic knowledge of how to use a terminal/CLI (Command Line Interface).  Additionally, the git command requires the installation of Git (Link) on your system.
     
