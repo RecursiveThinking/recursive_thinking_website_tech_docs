@@ -40,7 +40,11 @@
                 appendPage('gettingStartedGetTheProject')
                 setUpGettingStartedGetTheProject()
                 break;
-            case 'frontEnd':
+            case 'gettingStartedGitItRight':
+                appendPage('gettingStartedGitItRight')
+                setUpGettingStartedGetItRight()
+                break;
+                case 'frontEnd':
                 appendPage('frontEnd');
                 setUpFrontEnd();
                 break;
