@@ -27,5 +27,5 @@ To Start, simply download (or git clone - if this process is comfortable for you
 
 ## If you See this - You are Done:
 ![GitHub Clone](_md/img/04_website_running.jpg)
-    
+
 
