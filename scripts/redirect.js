@@ -2,6 +2,7 @@
 
     function appendPage(pageId) {
         console.log('pageId: ', pageId);
+        // \/-- if the logs error here - you need to add a link to layout
         const mainHTML = document.getElementById(pageId).import;
         console.log(mainHTML);
         const template = mainHTML.getElementById(pageId+'HTML').cloneNode(true);
@@ -50,6 +51,11 @@
             case 'backEnd':
                 appendPage('backEnd');
                 setUpBackEnd();
+                break;
+            case 'backEndPreRequisites':
+                console.log('bePR');
+                appendPage('backEndPreRequisites');
+                setUpBackEndPreRequisites();
                 break;
             case 'backEndYamlConfiguration':
                 appendPage('backEndYamlConfiguration');
