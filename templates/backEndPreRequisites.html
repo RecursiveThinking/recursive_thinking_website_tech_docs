@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PreRequisites</title>
+</head>
+<body>
+    <section id="backEndPreRequisitesHTML">
+        <div class="content container">
+            <div class="grid gutters full">
+                <div class="cell">
+                    <article class="siteMap">
+                        <ul class="container">
+                            <li><a href="#whoWeAre">Home</a></li>
+                            <li><a href="#backEnd">Back End</a></li>
+                            <li><a href="#backEndPreRequisites">PreRequisites</a></li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="cell">
+                    <article class="card">
+                        <h4 class="colorGrayb9 fw900 ttup">PreRequisites</h4>
+                        <hr>
+                        <p>
+                            The Following are the Prerequisites for the Recursive Thinking Backend:
+                        </p>
+                        <ul>
+                            <li>
+                                <a href="https://www.python.org/" target="/">Python</a>
+                                <p>
+                                    Our deployment script (deployrtw.py), which runs the aws cli and processes the template.yml file into different Amazon Web Services, runs on Python, so you'll need to install the language if you haven't already.
+                                </p>
+                                <p>
+                                    A quick way to test if you have python installed is to run:
+                                </p>
+                                <p>
+                                    python --version
+                                </p>
+                                <p>
+                                    in your CLI/terminal.  If you don't see "Python x.x.x" (where the x's are version/release numbers) then you don't have Python installed.  If this is the case, click on the link above to go to the Python Software Foundation's website and download a copy for your OS version.
+                                </p>
+                                <p>
+                                    *Note - some of the code in deployrtw.py requires modules only available in Python 3.  So please download a Python 3 version, or most likely, there will be errors in running the script.  Some of us are running Python 3.6.5, and there seems to be no problems with this version.
+                                </p>
+                            </li>
+                            <li>
+                                <a href="https://docs.aws.amazon.com/cli/latest/userguide/installing.html" target="/">Install Amazon Web Service Command Line Interface (AWS CLI)</a>
+                                <p>
+                                    The deployment script executes AWS CLI commands in order to build the Backend Stack of Component Services.
+                                </p>
+                                <p>
+                                    Please follow all the instructions in the link and make sure AWS CLI is properly installed for your operating system.
+                                </p>
+                                <p>
+                                    Some useful commands, after you go through the documentation, to verify your installation is correct:
+                                </p>
+                                <p>
+                                    aws --version
+                                </p>
+                                <p>
+                                    this should return something like: (although yours maybe slightly differnet based on your versioning)<br>
+                                    aws-cli/1.11.84 Python/3.6.2 Linux/4.4.0-59-generic botocore/1.5.47
+                                </p>
+                            </li>
+                            <li>
+                                <a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html" target="/">Configure Amazon Web Service Command Line Interface</a>
+                                <p>
+                                    Once you install AWS CLI - you'll need to configure it so that it points to your Amazon Web Service Account
+                                </p>
+                                <p>
+                                    After completing these steps, it is recommended that you check The AWS credentials and config File as described in the documentation.
+                                </p>
+                                <p>
+                                    The credentials file should contain the AWS Access Key ID and the AWS Secret Access Key
+                                </p>
+                                <p>
+                                    The config file should contain the region name and default output format.
+                                </p>
+                                <p>
+                                    If these files have both these keys and the correct values from your account, you should have a properly configured AWS CLI!
+                                </p>
+                            </li>
+                        </ul>
+                        
+                    </article>
+                </div>
+            </div>   
+        </div>
+    </section>
+    <script type="application/javascript" src="./backEndPreRequisites.js"></script>
+</body>
+</html>
+
