@@ -65,10 +65,13 @@
                             <li>
                                 <a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html" target="/">Configure Amazon Web Service Command Line Interface</a>
                                 <p>
-                                    Once you install AWS CLI - you'll need to configure it so that it points to your Amazon Web Service Account
+                                    Once you install AWS CLI - you'll need to configure it so that it points to your Amazon Web Service Account.  Please follow the instructions at the link above to do this.
                                 </p>
                                 <p>
-                                    After completing these steps, it is recommended that you check The AWS credentials and config File as described in the documentation.
+                                    Please note that there has been some confusion with the instructions above when it gets to "To get the access key ID and secret access key for an IAM user" --> Item 3 ("Choose your IAM user name").  Since creating an IAM resource and setting permissions can be a bit of a rabbit hole, we've made a step by step guide on a card below.  Creating an IAM Resource and Setting Permissions (needs anchor tag?)
+                                </p>
+                                <p>
+                                    It is recommended that you check The AWS credentials and config File as described in the documentation.
                                 </p>
                                 <p>
                                     The credentials file should contain the AWS Access Key ID and the AWS Secret Access Key
@@ -81,7 +84,49 @@
                                 </p>
                             </li>
                         </ul>
-                        
+                    </article>
+                    <article class="card">
+                        <h4 class="colorGrayb9 fw900 ttup">Creating an IAM Resource and Setting Permissions</h4>
+                        <hr>
+                        <ul>
+                            <li>
+                                <h5>Step 01:</h5>
+                                <p>Open IAM Console</p>
+                                <p>Select Users From Left Menu</p>
+                                <p>Click the "Add user" Button</p>
+                                <img src="./public/images/03_Backend/creating_IAM_user/creating_IAM_user_00_Add_User.jpg" alt="">
+                            </li>
+                            <li>
+                                <h5>Step 02:</h5>
+                                <p>Fill in Desired Name</p>
+                                <p>Select "Programatic Access" checkbox</p>
+                                <p>Click "Next: Permissions"</p>
+                                <img src="./public/images/03_Backend/creating_IAM_user/creating_IAM_user_01_Name_and_Type.jpg" alt="">
+                            </li>
+                            <li>
+                                <h5>Step 03a:</h5>
+                                <p>Select the "Attach Existing Policies directly" div</p>
+                                <p>In the policy table, click the "AdministratorAccess" checkbox</p>
+                                <img src="./public/images/03_Backend/creating_IAM_user/creating_IAM_user_02_01_Permissions.jpg" alt="">
+                                <h5>Step 03b:</h5>
+                                <p>Under "Set Permissions boundary" - click the radio button - "Creat user without a permissions boundary"</p>
+                                <p>Click "Next: Review"</p>
+                                <img src="./public/images/03_Backend/creating_IAM_user/creating_IAM_user_02_02_Permissions.jpg" alt="">
+                            </li>
+                            <li>
+                                <h5>Step 04:</h5>
+                                <p>Make sure configuration matches the image below</p>
+                                <p>If so, select "Create User"</p>
+                                <img src="./public/images/03_Backend/creating_IAM_user/creating_IAM_user_03_Review.jpg" alt="">
+                            </li>
+                            <li>
+                                <h5>Step 05:</h5>
+                                <p>If creation is successful - you'll see the following page.</p>
+                                <p>***Please Note:  This is the only place where you can copy your AWS Secret Access Key!!!!***</p>
+                                <p>So please copy it here, or download the .csv file (which contains both codes) for future use</p>
+                                <img src="./public/images/03_Backend/creating_IAM_user/creating_IAM_user_04_Success.jpg" alt="">
+                            </li>
+                        </ul>
                     </article>
                 </div>
             </div>   
