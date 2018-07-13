@@ -50,11 +50,27 @@
     color: #027d50;
     cursor: pointer;
 }
-
-.sidebar article span {
+.sidebar article span,
+.sidebar article span a {
     font-size: 1.5rem;
     color: #ffffff;
 }
+
+.sidebar article span a:hover {
+    color: rgb(70, 233, 255);
+}
+
+/* to hide class */
+.start-hide {
+    display: none;
+    /* display: flex;
+    flex-direction: row;
+    align-items: center; */
+    margin: 0 5%;
+    padding: 2rem 0 2rem 0;
+
+}
+
 
 @media only screen and (min-width: 480px) and (max-width: 767px){
     .sidebar{
@@ -71,8 +87,8 @@
     .sidebar {
         top: 70px;
     }
-    .sidebarImage {
-        /* width: 75%; */
-        /* width: 18rem; */
-    }
+    /* .sidebarImage {
+        width: 75%;
+        width: 18rem;
+    } */
 }
