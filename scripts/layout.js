@@ -36,11 +36,15 @@ function showStart(){
     item3.classList.toggle("start-hide");
     var item4 = document.getElementById('btnSidebarGettingStartedGitItRight');
     item4.classList.toggle("start-hide");
+    var item5 = document.getElementById('start');
+    item5.classList.toggle("fa-minus-square");
 }
 
 function showFront(){
     var item1 = document.getElementById('btnSidebarFrontEndTemplater');
     item1.classList.toggle("start-hide");
+    var item2 = document.getElementById('front');
+    item2.classList.toggle("fa-minus-square");
 }
 
 function showBack(){
@@ -48,5 +52,7 @@ function showBack(){
     item1.classList.toggle("start-hide");
     var item2 = document.getElementById('btnSidebarBackEndYAMLConfiguration');
     item2.classList.toggle("start-hide");
+    var item3 = document.getElementById('back');
+    item3.classList.toggle("fa-minus-square");
 }
 
