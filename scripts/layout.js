@@ -50,9 +50,11 @@ function showFront(){
 function showBack(){
     var item1 = document.getElementById('btnSidebarBackEndPreRequisites');
     item1.classList.toggle("start-hide");
-    var item2 = document.getElementById('btnSidebarBackEndYAMLConfiguration');
+    var item2 = document.getElementById('btnSidebarBackEndDeployBackEndStack');
     item2.classList.toggle("start-hide");
-    var item3 = document.getElementById('back');
-    item3.classList.toggle("fa-minus-square");
+    var item3 = document.getElementById('btnSidebarBackEndYAMLConfiguration');
+    item3.classList.toggle("start-hide");
+    var item4 = document.getElementById('back');
+    item4.classList.toggle("fa-minus-square");
 }
 
