@@ -27,6 +27,7 @@ recursiveApi.init();
 function showStart(){
     // Can't select all by class?
     // var iconList = document.getElementsByClassName("start-hide");
+    // Try to loop through classList
 
     var item1 = document.getElementById('btnSidebarGettingStartedGetConnected');
     item1.classList.toggle("start-hide");
