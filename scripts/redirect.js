@@ -57,9 +57,13 @@
                 setUpBackEnd();
                 break;
             case 'backEndPreRequisites':
-                console.log('bePR');
+                // console.log('bePR');
                 appendPage('backEndPreRequisites');
                 setUpBackEndPreRequisites();
+                break;
+            case 'backEndDeployBackEndStack':
+                appendPage('backEndDeployBackEndStack');
+                setUpBackEndDeployBackEndStack();
                 break;
             case 'backEndYamlConfiguration':
                 appendPage('backEndYamlConfiguration');
