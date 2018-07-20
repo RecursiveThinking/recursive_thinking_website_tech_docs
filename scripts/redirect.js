@@ -40,11 +40,20 @@
                 appendPage('gettingStartedGetTheProject')
                 setUpGettingStartedGetTheProject()
                 break;
-            case 'gettingStartedGitItRight':
-                appendPage('gettingStartedGitItRight')
+            case 'gettingStartedGetItRight':
+                appendPage('gettingStartedGetItRight')
                 setUpGettingStartedGetItRight()
                 break;
-                case 'frontEnd':
+            case 'gettingStartedBackEndPreRequisites':
+                // console.log('bePR');
+                appendPage('gettingStartedBackEndPreRequisites');
+                setUpGettingStartedBackEndPreRequisites();
+                break;
+            case 'gettingStartedBackEndDeployStack':
+                appendPage('gettingStartedBackEndDeployStack');
+                setUpGettingStartedBackEndDeployStack();
+                break;
+            case 'frontEnd':
                 appendPage('frontEnd');
                 setUpFrontEnd();
                 break;
@@ -55,15 +64,6 @@
             case 'backEnd':
                 appendPage('backEnd');
                 setUpBackEnd();
-                break;
-            case 'backEndPreRequisites':
-                // console.log('bePR');
-                appendPage('backEndPreRequisites');
-                setUpBackEndPreRequisites();
-                break;
-            case 'backEndDeployBackEndStack':
-                appendPage('backEndDeployBackEndStack');
-                setUpBackEndDeployBackEndStack();
                 break;
             case 'backEndYamlConfiguration':
                 appendPage('backEndYamlConfiguration');
