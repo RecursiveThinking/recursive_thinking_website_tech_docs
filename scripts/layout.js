@@ -35,10 +35,14 @@ function showStart(){
     item2.classList.toggle("start-hide");
     var item3 = document.getElementById('btnSidebarGettingStartedGetTheProject');
     item3.classList.toggle("start-hide");
-    var item4 = document.getElementById('btnSidebarGettingStartedGitItRight');
+    var item4 = document.getElementById('btnSidebarGettingStartedGetItRight');
     item4.classList.toggle("start-hide");
-    var item5 = document.getElementById('start');
-    item5.classList.toggle("fa-minus-square");
+    var item5 = document.getElementById('btnSidebarGettingStartedBackEndPreRequisites');
+    item5.classList.toggle("start-hide");
+    var item6 = document.getElementById('btnSidebarGettingStartedBackEndDeployStack');
+    item6.classList.toggle("start-hide");
+    var item7 = document.getElementById('start');
+    item7.classList.toggle("fa-minus-square");
 }
 
 function showFront(){
@@ -49,13 +53,13 @@ function showFront(){
 }
 
 function showBack(){
-    var item1 = document.getElementById('btnSidebarBackEndPreRequisites');
+    // var item1 = document.getElementById('btnSidebarBackEndPreRequisites');
+    // item1.classList.toggle("start-hide");
+    // var item2 = document.getElementById('btnSidebarBackEndDeployBackEndStack');
+    // item2.classList.toggle("start-hide");
+    var item1 = document.getElementById('btnSidebarBackEndYAMLConfiguration');
     item1.classList.toggle("start-hide");
-    var item2 = document.getElementById('btnSidebarBackEndDeployBackEndStack');
-    item2.classList.toggle("start-hide");
-    var item3 = document.getElementById('btnSidebarBackEndYAMLConfiguration');
-    item3.classList.toggle("start-hide");
-    var item4 = document.getElementById('back');
-    item4.classList.toggle("fa-minus-square");
+    var item2 = document.getElementById('back');
+    item2.classList.toggle("fa-minus-square");
 }
 
