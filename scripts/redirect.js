@@ -44,8 +44,11 @@
                 appendPage('gettingStartedGetItRight')
                 setUpGettingStartedGetItRight()
                 break;
+            case 'gettingStartedGettingThroughConflicts':
+                appendPage('gettingStartedGettingThroughConflicts');
+                setUpGettingStartedGettingThroughConflicts();
+                break;
             case 'gettingStartedBackEndPreRequisites':
-                // console.log('bePR');
                 appendPage('gettingStartedBackEndPreRequisites');
                 setUpGettingStartedBackEndPreRequisites();
                 break;
