@@ -37,12 +37,14 @@ function showStart(){
     item3.classList.toggle("start-hide");
     var item4 = document.getElementById('btnSidebarGettingStartedGetItRight');
     item4.classList.toggle("start-hide");
-    var item5 = document.getElementById('btnSidebarGettingStartedBackEndPreRequisites');
+    var item5 = document.getElementById('btnSidebarGettingStartedGettingThroughConflicts');
     item5.classList.toggle("start-hide");
-    var item6 = document.getElementById('btnSidebarGettingStartedBackEndDeployStack');
+    var item6 = document.getElementById('btnSidebarGettingStartedBackEndPreRequisites');
     item6.classList.toggle("start-hide");
-    var item7 = document.getElementById('start');
-    item7.classList.toggle("fa-minus-square");
+    var item7 = document.getElementById('btnSidebarGettingStartedBackEndDeployStack');
+    item7.classList.toggle("start-hide");
+    var item8 = document.getElementById('start');
+    item8.classList.toggle("fa-minus-square");
 }
 
 function showFront(){
