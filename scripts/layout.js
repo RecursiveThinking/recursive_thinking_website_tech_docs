@@ -24,36 +24,11 @@ class api {
 const recursiveApi = new api();
 recursiveApi.init();
 
-// Should refactor so one function handles all cases. I'm not sure how to refer to the clicked on element.
-function topFocus1(){
-    Array.from(document.getElementsByClassName("top-category")).forEach(function(item){
-        item.classList.remove("top-focus");
-        var item1 = document.getElementById("about-focus");
-        item1.classList.add("top-focus");
-    });
-}
-
-function topFocus2(){
-    Array.from(document.getElementsByClassName("top-category")).forEach(function(item){
-        item.classList.remove("top-focus");
-        var item1 = document.getElementById("start-focus");
-        item1.classList.add("top-focus");
-    });
-}
-
-function topFocus3(){
-    Array.from(document.getElementsByClassName("top-category")).forEach(function(item){
-        item.classList.remove("top-focus");
-        var item1 = document.getElementById("front-focus");
-        item1.classList.add("top-focus");
-    });
-}
-
-function topFocus4(){
-    Array.from(document.getElementsByClassName("top-category")).forEach(function(item){
-        item.classList.remove("top-focus");
-        var item1 = document.getElementById("back-focus");
-        item1.classList.add("top-focus");
+// Adds blue to visited parent category
+function parentFocus(element){
+    Array.from(document.getElementsByClassName("tab-category")).forEach(function(item){
+        item.classList.remove("tab-focus");
+        element.children[1].classList.add("tab-focus");
     });
 }
 
