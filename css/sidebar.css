@@ -92,6 +92,10 @@
 
 }
 
+.top-focus {
+    color: rgb(70, 233, 255);
+}
+
 @media only screen and (min-width: 480px) and (max-width: 767px){
     .sidebar{
         top: 112px;
