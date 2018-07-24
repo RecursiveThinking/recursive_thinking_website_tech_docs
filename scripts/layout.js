@@ -24,12 +24,19 @@ class api {
 const recursiveApi = new api();
 recursiveApi.init();
 
+// Try replacing with querySelectorAll()
+
 // Adds blue to visited parent category
-function parentFocus(element){
+function tabFocus(element){
     Array.from(document.getElementsByClassName("tab-category")).forEach(function(item){
         item.classList.remove("tab-focus");
         element.children[1].classList.add("tab-focus");
     });
+}
+// highlights current tab on sidebar if you click through a parent link
+function tabVisitFocus(){
+    // Needs to be fed an id and select child tab from that ID. 
+    
 }
 
 function showStart(){
@@ -55,4 +62,3 @@ function showBack(){
     var item2 = document.getElementById('back');
     item2.classList.toggle("fa-minus-square");
 }
-
