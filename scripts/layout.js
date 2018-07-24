@@ -26,18 +26,15 @@ recursiveApi.init();
 
 // Try replacing with querySelectorAll()
 
+// Highlighting happens in redirect.js now through sideHighlight(). To reenable, add onclick="tabFocus(this)"  to each article in the layout.html sidebar area.
 // Adds blue to visited parent category
-function tabFocus(element){
-    Array.from(document.getElementsByClassName("tab-category")).forEach(function(item){
-        item.classList.remove("tab-focus");
-        element.children[1].classList.add("tab-focus");
-    });
-}
+// function tabFocus(element){
+//     Array.from(document.getElementsByClassName("sidebarTitle")).forEach(function(item){
+//         item.classList.remove("tab-focus");
+//         element.children[1].classList.add("tab-focus");
+//     });
+// }
 // highlights current tab on sidebar if you click through a parent link
-function tabVisitFocus(){
-    // Needs to be fed an id and select child tab from that ID. 
-    
-}
 
 function showStart(){
     // toggles display property for sub headings on nav bar
@@ -57,7 +54,7 @@ function showFront(){
 }
 
 function showBack(){
-    var item1 = document.getElementById('btnSidebarBackEndYAMLConfiguration');
+    var item1 = document.getElementById('btnSidebarBackEndYamlConfiguration');
     item1.classList.toggle("back-hide");
     var item2 = document.getElementById('back');
     item2.classList.toggle("fa-minus-square");
