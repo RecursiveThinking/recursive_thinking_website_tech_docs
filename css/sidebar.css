@@ -72,6 +72,29 @@
 
 }
 
+.front-hide {
+    display: none;
+    /* display: flex;
+    flex-direction: row;
+    align-items: center; */
+    margin: 0 5%;
+    padding: 2rem 0 2rem 0;
+
+}
+
+.back-hide {
+    display: none;
+    /* display: flex;
+    flex-direction: row;
+    align-items: center; */
+    margin: 0 5%;
+    padding: 2rem 0 2rem 0;
+
+}
+
+.tab-focus {
+    color: rgb(70, 233, 255);
+}
 
 @media only screen and (min-width: 480px) and (max-width: 767px){
     .sidebar{

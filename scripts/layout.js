@@ -7,10 +7,10 @@ class api {
     init() {
         // const sidebarItems = document.getElementsByClassName('sidebar-category');
         const sidebarItems = document.querySelectorAll('.sidebar-category');
-        console.log(sidebarItems);
+        // console.log(sidebarItems);
         const sideBarItemsArray = Array.from(sidebarItems);
-        console.log('Array');
-        console.log(sidebarItems);
+        // console.log('Array');
+        // console.log(sidebarItems);
         sideBarItemsArray.forEach((item) => {
             item.addEventListener('click', () => {
                 const pageId = item.getAttribute('data-pageId');
@@ -24,44 +24,38 @@ class api {
 const recursiveApi = new api();
 recursiveApi.init();
 
-function showStart(){
-    // Can't select all by class?
-    // var iconList = document.getElementsByClassName("start-hide");
-    // Try to loop through classList
+// Try replacing with querySelectorAll()
 
-    var item1 = document.getElementById('btnSidebarGettingStartedGetConnected');
-    item1.classList.toggle("start-hide");
-    var item2 = document.getElementById('btnSidebarGettingStartedGetPreReqs');
-    item2.classList.toggle("start-hide");
-    var item3 = document.getElementById('btnSidebarGettingStartedGetTheProject');
-    item3.classList.toggle("start-hide");
-    var item4 = document.getElementById('btnSidebarGettingStartedGetItRight');
-    item4.classList.toggle("start-hide");
-    var item5 = document.getElementById('btnSidebarGettingStartedGettingThroughConflicts');
-    item5.classList.toggle("start-hide");
-    var item6 = document.getElementById('btnSidebarGettingStartedBackEndPreRequisites');
-    item6.classList.toggle("start-hide");
-    var item7 = document.getElementById('btnSidebarGettingStartedBackEndDeployStack');
-    item7.classList.toggle("start-hide");
-    var item8 = document.getElementById('start');
-    item8.classList.toggle("fa-minus-square");
+// Highlighting happens in redirect.js now through sideHighlight(). To reenable, add onclick="tabFocus(this)"  to each article in the layout.html sidebar area.
+// Adds blue to visited parent category
+// function tabFocus(element){
+//     Array.from(document.getElementsByClassName("sidebarTitle")).forEach(function(item){
+//         item.classList.remove("tab-focus");
+//         element.children[1].classList.add("tab-focus");
+//     });
+// }
+// highlights current tab on sidebar if you click through a parent link
+
+function showStart(){
+    // toggles display property for sub headings on nav bar
+    Array.from(document.getElementsByClassName("start-child")).forEach(function(item){
+        item.classList.toggle("start-hide");
+    });
+    // toggles icon
+    var startPlus = document.getElementById('start');
+    startPlus.classList.toggle("fa-minus-square");
 }
 
 function showFront(){
     var item1 = document.getElementById('btnSidebarFrontEndTemplater');
-    item1.classList.toggle("start-hide");
+    item1.classList.toggle("front-hide");
     var item2 = document.getElementById('front');
     item2.classList.toggle("fa-minus-square");
 }
 
 function showBack(){
-    // var item1 = document.getElementById('btnSidebarBackEndPreRequisites');
-    // item1.classList.toggle("start-hide");
-    // var item2 = document.getElementById('btnSidebarBackEndDeployBackEndStack');
-    // item2.classList.toggle("start-hide");
-    var item1 = document.getElementById('btnSidebarBackEndYAMLConfiguration');
-    item1.classList.toggle("start-hide");
+    var item1 = document.getElementById('btnSidebarBackEndYamlConfiguration');
+    item1.classList.toggle("back-hide");
     var item2 = document.getElementById('back');
     item2.classList.toggle("fa-minus-square");
 }
-

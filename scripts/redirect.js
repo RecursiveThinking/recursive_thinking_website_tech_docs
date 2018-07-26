@@ -10,9 +10,26 @@
         const main = document.getElementById('main-content');
         main.innerHTML = '';
         main.appendChild(template);
-
+        sideHighlight(pageId);
         // Demonstrating that the template has loaded
         console.log(document.getElementById(pageId+'HTML'));
+    }
+    
+    //Highlights tabs based on the relationship between pageId and sidebar article id. Can highlight each sidebar heading on load.  
+    function sideHighlight(pageId) {
+        Array.from(document.getElementsByClassName("sidebarTitle")).forEach(function(item){
+            // removes any highlighted item
+            item.classList.remove("tab-focus");
+            // corrects for camel casing
+            const formatID = pageId[0].toUpperCase() + pageId.slice(1, pageId.length);
+            // constructs the article id from the sidebar 
+            const articleID = "btnSidebar"+formatID;
+            console.log(articleID);
+            // selects parent article
+            const parentArticle = document.getElementById(articleID);
+            // adds highlighted class to the corresponding sidebar heading
+            parentArticle.children[1].classList.add("tab-focus");
+        });
     }
 
     // Appends HTML template, then runs associated setup scripts
