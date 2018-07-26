@@ -36,26 +36,27 @@ recursiveApi.init();
 // }
 // highlights current tab on sidebar if you click through a parent link
 
-function showStart(){
-    // toggles display property for sub headings on nav bar
-    Array.from(document.getElementsByClassName("start-child")).forEach(function(item){
-        item.classList.toggle("start-hide");
-    });
-    // toggles icon
-    var startPlus = document.getElementById('start');
-    startPlus.classList.toggle("fa-minus-square");
-}
+// !!!!If you want to re-add collapsible sidebar, add the classes back to the child articles in layout (start child, start hide, back hide) as well as the on-click functions
+// function showStart(){
+//     // toggles display property for sub headings on nav bar
+//     Array.from(document.getElementsByClassName("start-child")).forEach(function(item){
+//         item.classList.toggle("start-hide");
+//     });
+//     // toggles icon
+//     var startPlus = document.getElementById('start');
+//     startPlus.classList.toggle("fa-minus-square");
+// }
 
-function showFront(){
-    var item1 = document.getElementById('btnSidebarFrontEndTemplater');
-    item1.classList.toggle("front-hide");
-    var item2 = document.getElementById('front');
-    item2.classList.toggle("fa-minus-square");
-}
+// function showFront(){
+//     var item1 = document.getElementById('btnSidebarFrontEndTemplater');
+//     item1.classList.toggle("front-hide");
+//     var item2 = document.getElementById('front');
+//     item2.classList.toggle("fa-minus-square");
+// }
 
-function showBack(){
-    var item1 = document.getElementById('btnSidebarBackEndYamlConfiguration');
-    item1.classList.toggle("back-hide");
-    var item2 = document.getElementById('back');
-    item2.classList.toggle("fa-minus-square");
-}
+// function showBack(){
+//     var item1 = document.getElementById('btnSidebarBackEndYamlConfiguration');
+//     item1.classList.toggle("back-hide");
+//     var item2 = document.getElementById('back');
+//     item2.classList.toggle("fa-minus-square");
+// }
