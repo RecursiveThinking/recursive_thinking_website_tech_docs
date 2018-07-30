@@ -165,9 +165,14 @@ p {
     width: 100%;
 }
 
+img {
+    width: 100%;
+}
+
 .img-caption {
     text-align: center;
     font-style: italic;
+    color: #424041;
 }
 
 .alpha-list {
@@ -176,6 +181,11 @@ p {
     margin-top: 1%;
     font-size: 3.4rem;
     letter-spacing: 1.1px;
+}
+
+.roman-list {
+    list-style-type: lower-roman;
+    margin-left: 5%;
 }
 
 /* general classes */

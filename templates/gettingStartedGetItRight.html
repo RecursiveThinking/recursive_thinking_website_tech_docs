@@ -13,38 +13,105 @@
                         <ul class="container">
                             <li><a href="#whoWeAre">Home</a></li>
                             <li><a href="#gettingStarted">Getting Started</a></li>
-                            <li><a href="#gettingStartedGetItRight">Get It Right</a></li>
+                            <li><a href="#gettingStartedGetItRight">Contributing</a></li>
                         </ul>
                     </article>
                 </div>
                 <div class="cell">
                     <article class="card">
-                        <h4 class="colorGrayb9 fw900 ttup">Proper Git Techniques</h4>
+                        <h4 class="colorGrayb9 fw900 ttup">Creating Changes and Additions</h4>
                         <hr>
                         <p>
-                            Made some contributions?  Want to submit those back to the repository (where the project is stored)? You have been working on a copy of the master project. By adding your files, committing them and finally pushing them, you are effectively uploading the new 'master copy' back to the repository.
-                            <br><br>
-                            If you look at the project folder you cloned earlier, you will see that there is a subdirectory in there called .git. There is a lot going under the hood of that directory but it's just important to know that this is where your changes will be tracked. 
-                            <br><br>
-                            Open the project folder (containing the .git directory) in your terminal/command prompt. VSCode allows you do do this by right-clicking on the folder or you can navigate to that directory through the terminal. Here we can run a command to see what changes have been made. It's a good idea to double check what files you have modified.
-                            <br><br>
-                            In the command prompt, type <span class="codeSnippetGitCommand">git status</span>. You will be shown a list of files that have been modified. Files in red need to be staged to commit, files in green have already been staged. Now that you have seen what files were modified, you can upload them back to the master project in 3 steps.
-                            <br><br>
-                            They need to be added (or staged). Once staged, they can be committed with a message for your collaborators to see what changes have been made. Finally they can be pushed, or uploaded to the master.
-                            <br><br>
-                            Below are the steps to add your changes using the terminal. VSCode has a very simple way that will also be detailed.
+                            Now that you are all set up, you can learn how to do work on the site.
                         </p>
+                        <h5>Committing Changes</h5>
+                        <p>
+                            If you have done some work on the website and you want to push your changes to the repository, perform the following commands.
+                        </p>
+
                         <ol>
                             <li>
-                                ADD- Any changes you have made to the project since you pulled will need to be added. In the terminal, navigate to the project directory containing the .git subdirectory. Type <span class="codeSnippetGitCommand">git add .</span> if you would like add every file that you have modified. You can also add files one by one by typing <span class="codeSnippetGitCommand">git add <filepath></span> e.g. <span class="codeSnippetGitCommand">git add templates/backEnd.html</span>
+                                Re-initialize a Git repository in your project folder by running a <span class="codeSnippetGitCommand">git init</span>command in your terminal.
                             </li>
+                            <ol class="alpha-list">
+                                <li>
+                                    <p>
+                                        When you run this command, you should get a “Re-initializing git repository in this location” message. If you do not get this message, or get a message that says “Initializing git repository in this location,” stop, as something went wrong in the cloning process. 
+                                    </p>
+                                </li>
+                            </ol>
                             <li>
-                                COMMIT- The file(s) are ready to be committed now. You can double check that they are ready by typing <span class="codeSnippetGitCommand">git status</span> again and verifying that all of the files you wish to commit are green. To commit, <span class="codeSnippetGitCommand">git commit -m 'ex. Added a new user table to the homepage'</span> where -m signals a message and anything in quotes is the message attached to the commit. 
+                                Add untracked files. 
                             </li>
+                            <ol class="alpha-list">
+                                <li>
+                                    <p>
+                                        If you have created new files or made changes to existing ones, you will need to add your changes.
+                                    </p>
+                                    <ol class="roman-list">
+                                        <li>
+                                            <p>
+                                                First, run the command git status to make sure that you are on the master branch, which reflects the production-ready state. This will also allow you to see what files have not yet been added, as they will appear in red. Added files will appear in green. 
+                                            </p>
+                                        </li>
+                                        <img src="public/images/contributing/committing1.jpg" alt="untracked-files">
+                                        <p class="img-caption">
+                                                The untracked files are displayed in red.
+                                        </p>
+                                        <li>
+                                            <p>
+                                                    To add files, run the <span class="codeSnippetGitCommand">git add <filename></span> command.
+                                                            For example, if you created or edited a file named “readMe1,” you would add the file by running a <span class="codeSnippetGitCommand">git add readME1.md</span>command.
+                                            </p>
+                                            <img src="public/images/contributing/committing2.jpg" alt="untracked-add">
+                                            <p class="img-caption">
+                                                Add each file (readMe1, readMe2 and readMe3).
+                                            </p>
+                                            <p>
+                                                Once added, they will appear green when you run the git status command. 
+                                            </p>
+                                            <img src="public/images/contributing/committing3.jpg" alt="untracked-added">
+                                            <p class="img-caption">
+                                                Now that the files have been added, they will appear in green when you check their status.
+                                            </p>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <p>
+                                        When you are ready to commit your changes, you can run the commit command, which includes a mandatory message detailing what action you have taken. Do this by running
+                                        <span class="codeSnippetGitCommand">git commit -m “”</span>in your terminal. (Inside of the quotation marks, you will type your message details.)    
+                                    </p>
+                                    <p>
+                                        For example, once you are ready to commit readMe1.md, you would run <span class="codeSnippetGitCommand">git commit -m “now I have pushed the files where we have resolved conflicts”</span>in your terminal, or whatever message you choose.
+                                    </p>
+                                    <img src="public/images/contributing/committing4.jpg" alt="untracked-message">
+                                    <p class="img-caption">
+                                        The files have been committed and include a message detailing the action taken.
+                                    </p>
+                                </li>
+                            </ol>
                             <li>
-                                PUSH- You can now push your changes back to the repository. Simply type <span class="codeSnippetGitCommand">git push origin master</span> to finalize your changes. If successful, when future collaborators pull the repository, your changes will have been included. 
-                                <br><br>** Note! Sometimes two collaborators will be working on the same files at the same time. If they push their changes before you, Git will not be able to reconcile your changes with theirs and you will need to merge the two recent changes. More on that later.
+                                <p>
+                                    Push up your changes.
+                                </p>
                             </li>
+                            <ol class="alpha-list">
+                                <li>
+                                    <p>
+                                        To make the final step in pushing your changes to Git, where they will show up in your commit history and in the project directory on GitHub, run the<span class="codeSnippetGitCommand">git push origin master</span>command in your terminal.
+                                    </p>
+                                    <img src="public/images/contributing/committing5.jpg" alt="untracked-push">
+                                    <p class="img-caption">
+                                        The files have been pushed to master.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        If successful, when future collaborators pull the repository, your changes will have been included. 
+                                    </p>
+                                </li>
+                            </ol>
                         </ol>
                         
                         
