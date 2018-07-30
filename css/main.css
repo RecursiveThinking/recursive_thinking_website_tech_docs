@@ -161,6 +161,23 @@ p {
     width: 100%;
 }
 
+.cell > .card > ol > li > img {
+    width: 100%;
+}
+
+.img-caption {
+    text-align: center;
+    font-style: italic;
+}
+
+.alpha-list {
+    list-style-type: lower-alpha;
+    margin-left: 5%;
+    margin-top: 1%;
+    font-size: 3.4rem;
+    letter-spacing: 1.1px;
+}
+
 /* general classes */
 .codeSnippetGitCommand {
     font-family: 'Courier New', Courier, monospace;
