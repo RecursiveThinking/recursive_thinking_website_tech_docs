@@ -13,16 +13,37 @@
                         <ul class="container">
                             <li><a href="#whoWeAre">Home</a></li>
                             <li><a href="#gettingStarted">Getting Started</a></li>
-                            <li><a href="#gettingStartedGettingThroughConflicts">Getting Through Conflicts</a></li>
+                            <li><a href="#gettingStartedGettingThroughConflicts">Dealing with Merge Conflicts</a></li>
                         </ul>
                     </article>
                 </div>
                 <div class="cell">
                     <article class="card">
-                        <h4 class="colorGrayb9 fw900 ttup">Working through Git Commit Conflicts</h4>
+                        <h4 class="colorGrayb9 fw900 ttup">Dealing with Merge Conflicts</h4>
                         <hr>
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos excepturi, dolor quis accusamus enim quia, magnam odio dignissimos voluptatibus reprehenderit repellat pariatur, dicta qui! Fuga, officia harum id veritatis distinctio ipsam ea amet ullam quibusdam recusandae eos ad corporis unde vitae et aliquid. Praesentium nam, voluptas ab accusantium minus consectetur a eligendi omnis, provident, pariatur molestiae exercitationem ad magni mollitia vitae sequi distinctio voluptatum ex aliquid facere hic voluptates dicta. Molestiae unde modi dolor tenetur itaque deserunt placeat atque iste, accusamus fugit non, sit corrupti ea, dolores distinctio odit magnam laboriosam. Dignissimos perspiciatis, autem molestias non doloribus vitae natus ea eaque mollitia voluptatem! Quaerat suscipit atque, asperiores commodi culpa similique voluptates perferendis autem incidunt nemo vero at explicabo voluptatum. Praesentium facere aspernatur commodi molestias, pariatur beatae quibusdam odit totam voluptatum accusamus, nihil odio aliquam corrupti quis, explicabo ea eum. Minus esse itaque repellendus recusandae quo temporibus earum perspiciatis maiores. Hic, sit. Ad eos pariatur placeat voluptatibus laboriosam harum cupiditate assumenda sit consequatur impedit nam sequi explicabo ratione minima, dolorem, a vel tenetur dolor adipisci fugiat? Facilis, iste eaque! Odio alias aliquid molestias soluta cupiditate dicta totam ratione laboriosam velit, quis voluptatibus sapiente voluptatum ipsa rem exercitationem ipsum excepturi ea cumque suscipit corrupti explicabo dolorem nulla iste. Error autem debitis adipisci corrupti ducimus. Illo, cumque! Corrupti aliquid vel id nam placeat vitae voluptate ab, beatae perspiciatis voluptas autem repellat. Praesentium, soluta sequi! Deserunt ipsum dicta, sapiente voluptatem at asperiores sed illo repellendus eveniet, quos minima quidem aspernatur sunt doloribus, explicabo omnis.
+                            Merge conflicts occur when someone pushes changes to master after another person has pushed changes to that same file to master. More specifically, if Person A and Person B start working on the same file and Person A pushes changes to that file, but Person B pushes changes to the same file without rebasing their branch to pick up the changes from Person A’s commit, then you may have a merge conflict. 
+                        </p>
+                        <p>
+                            The screenshots below show the local computer, which does not have the most recent changes from master. In this example, Person B has done the git commands mentioned in the previous section (status, add, commit). They made a commit annotated as “this commit will error when pushed - as the head is the one commit farther than this local”. 
+                        </p>
+                        <img src="public/images/merge-conflict/merge1.jpg" alt="untracked-added">
+                        <p class="img-caption">
+                            All files have been committed.
+                        </p>
+                        <p>
+                            When the user runs<span class="codeSnippetGitCommand">git push origin master</span>, they encounter an error because of a merge conflict. 
+                        </p>
+                        <img src="public/images/merge-conflict/merge2.jpg" alt="untracked-added">
+                        <p class="img-caption">
+                            The user encounters a merge conflict, noted by the “! [rejected]” message.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h4 class="colorGrayb9 fw900 ttup">Resolving Conflicts</h4>
+                        <hr>
+                        <p>
+                            In order to resolve this conflict, run the following commands:
                         </p>
                     </article>
                 </div>
