@@ -18,46 +18,45 @@
               </li>
               <li><a href="#gettingStarted">Getting Started</a></li>
               <li>
-                <a href="#gettingStartedBackEndPreRequisites"> BackEnd PreRequisites</a>
+                <a href="#gettingStartedBackEndPreRequisites"> Back End Prerequisites</a>
               </li>
             </ul>
           </article>
         </div>
         <div class="cell">
           <article class="card">
-            <h4 class="colorGrayb9 fw900 ttup">PreRequisites</h4>
+            <h4 class="colorGrayb9 fw900 ttup">Back End PreRequisites</h4>
             <hr>
             <p>
-              The Following are the Prerequisites for the Recursive Thinking Backend:
+              The following are the prerequisites for the Recursive Thinking back end:
             </p>
-            <ul>
+            <ol>
               <li>
-                <a href="https://www.python.org/" target="/">Python</a>
                 <p>
-                  Our deployment script (deployrtw.py), which runs the aws cli and processes the template.yml file into different Amazon Web
-                  Services, runs on Python, so you'll need to install the language if you haven't already.
+                  Python <a href="https://www.python.org/" target="/">https://www.python.org</a>
                 </p>
                 <p>
-                  A quick way to test if you have python installed is to run:
+                  Our deployment script (deployrtw.py), which runs the AWS CLI and processes the template.yml file into different Amazon Web Services, runs on Python, so you'll need to install the language if you have not already.
                 </p>
                 <p>
-                  python --version
+                  A quick way to test if you have python installed is to run in the CLI/terminal:
                 </p>
                 <p>
-                  in your CLI/terminal. If you don't see "Python x.x.x" (where the x's are version/release numbers) then you don't have Python
-                  installed. If this is the case, click on the link above to go to the Python Software Foundation's website
-                  and download a copy for your OS version.
+                  <span class="codeSnippetGitCommand">python --version</span>
                 </p>
                 <p>
-                  *Note - some of the code in deployrtw.py requires modules only available in Python 3. So please download a Python 3 version,
-                  or most likely, there will be errors in running the script. Some of us are running Python 3.6.5, and there
-                  seems to be no problems with this version.
+                  If you don't see "Python x.x.x" (where the x's are version/release numbers) then you don't have Python installed. If this is the case, click on the link above to go to the Python Software Foundation's website and download a copy for your OS version.
+                </p>
+                <p>
+                  *Note - some of the code in deployrtw.py requires modules only available in Python 3. So please download a Python 3 version, or most likely, there will be errors in running the script. Some of us are running Python 3.6.5, and there seems to be no problems with this version.
                 </p>
               </li>
               <li>
-                <a href="https://docs.aws.amazon.com/cli/latest/userguide/installing.html" target="/">Install Amazon Web Service Command Line Interface (AWS CLI)</a>
                 <p>
-                  The deployment script executes AWS CLI commands in order to build the Backend Stack of Component Services.
+                  Install Amazon Web Service Command Line Interface (AWS CLI)<a href="https://docs.aws.amazon.com/cli/latest/userguide/installing.html" target="/">(https://docs.aws.amazon.com/cli/latest/userguide/installing.html)</a>
+                </p>
+                <p>
+                  The deployment script executes AWS CLI commands in order to build the Back End Stack of Component Services.
                 </p>
                 <p>
                   Please follow all the instructions in the link and make sure AWS CLI is properly installed for your operating system.
@@ -66,33 +65,34 @@
                   Some useful commands, after you go through the documentation, to verify your installation is correct:
                 </p>
                 <p>
-                  aws --version
+                  <span class="codeSnippetGitCommand">aws --version</span>
                 </p>
                 <p>
-                  this should return something like: (although yours maybe slightly differnet based on your versioning)
+                  This should return something like: (although yours maybe slightly different based on your versioning)
                   <br> aws-cli/1.11.84 Python/3.6.2 Linux/4.4.0-59-generic botocore/1.5.47
                 </p>
               </li>
               <li>
-                <a href="https://aws.amazon.com/free/" target="/">Create an Amazon Web Services (AWS) Account</a>
                 <p>
-                  Since we'll be building the BackEnd using AWS - you'll need an account so that you can create your own BackEnd for the website!
+                  Create an Amazon Web Services (AWS) Account <a href="https://aws.amazon.com/free/" target="/">(https://aws.amazon.com/free)</a>
                 </p>
                 <p>
-                  Follow the link above, select "Create a Free Account", and fill in the required information.
+                  Since we'll be building the back end using AWS - you'll need an account so that you can create your own BackEnd for the website!
+                </p>
+                <p>
+                  Follow the link above, select "Create a Free Account," and fill in the required information.
                 </p>
               </li>
               <li>
-                <a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html" target="/">Configure Amazon Web Service Command Line Interface</a>
                 <p>
-                  Once you install AWS CLI - you'll need to configure it so that it points to your Amazon Web Service Account. Please follow
-                  the instructions at the link above to do this.
+                  Configure Amazon Web Service Command Line Interface<a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html" target="/">(https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)</a>
+                </p>
+                
+                <p>
+                  Once you install AWS CLI - you'll need to configure it so that it points to your Amazon Web Service Account. Please follow the instructions at the link above to do this.
                 </p>
                 <p>
-                  Please note that there has been some confusion with the instructions above when it gets to "To get the access key ID and
-                  secret access key for an IAM user" --> Item 3 ("Choose your IAM user name"). Since creating an IAM resource
-                  and setting permissions can be a bit of a rabbit hole, we've made a step by step guide on a card below.
-                  Creating an IAM Resource and Setting Permissions (needs anchor tag?)
+                  Please note that there has been some confusion with the instructions above when it gets to "To get the access key ID and secret access key for an IAM user" --> Item 3 ("Choose your IAM user name"). Since creating an IAM resource and setting permissions can be a bit of a rabbit hole, we've made a step by step guide on a card below. Creating an IAM Resource and Setting Permissions (needs anchor tag?)
                 </p>
                 <p>
                   It is recommended that you check The AWS credentials and config File as described in the documentation.
@@ -107,7 +107,7 @@
                   If these files have both these keys and the correct values from your account, you should have a properly configured AWS CLI!
                 </p>
               </li>
-            </ul>
+            <ol>
           </article>
           <article class="card">
             <h4 class="colorGrayb9 fw900 ttup">Creating an IAM Resource and Setting Permissions</h4>
