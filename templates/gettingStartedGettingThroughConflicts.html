@@ -13,7 +13,7 @@
                         <ul class="container">
                             <li><a href="#whoWeAre">Home</a></li>
                             <li><a href="#gettingStarted">Getting Started</a></li>
-                            <li><a href="#gettingStartedGettingThroughConflicts">Dealing with Merge Conflicts</a></li>
+                            <li><a href="#gettingStartedGettingThroughConflicts">Merge Conflicts</a></li>
                         </ul>
                     </article>
                 </div>
@@ -244,9 +244,12 @@
                                         When you click on a commit, you can see what changes have been accepted. This image shows the code of the final commit.
                                     </p>
                                 </div>
-
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                <div class="nextPrev">
+                                    <button type="button" class="prevBtn" onclick="plusSlides(-1)">< Previous</button>
+                                    <button type="button" class="nextBtn" onclick="plusSlides(1)">Next ></button>
+                                </div>
+                                <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
                             </div>
                             <br>
                         </section>

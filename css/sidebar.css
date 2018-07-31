@@ -60,37 +60,36 @@
 .sidebar article span a:hover {
     color: rgb(70, 233, 255);
 }
-
+/* 
 /* to hide class */
-.start-hide {
+/* .start-hide {
     display: none;
-    /* display: flex;
+    display: flex;
     flex-direction: row;
-    align-items: center; */
+    align-items: center; 
     margin: 0 5%;
     padding: 2rem 0 2rem 0;
-
-}
+} 
 
 .front-hide {
     display: none;
-    /* display: flex;
+    display: flex;
     flex-direction: row;
-    align-items: center; */
+    align-items: center; 
     margin: 0 5%;
-    padding: 2rem 0 2rem 0;
+    padding: 2rem 0 2rem 0; 
 
 }
 
 .back-hide {
     display: none;
-    /* display: flex;
+    display: flex;
     flex-direction: row;
-    align-items: center; */
+    align-items: center;
     margin: 0 5%;
     padding: 2rem 0 2rem 0;
 
-}
+}  */
 
 .tab-focus {
     color: rgb(70, 233, 255);
