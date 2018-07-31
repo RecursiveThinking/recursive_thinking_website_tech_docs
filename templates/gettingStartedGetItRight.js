@@ -4,7 +4,6 @@
 // }
 var slideIndex = 1;
 
-// Curiously, the first slide is not shown until the next button is tapped
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides");
@@ -13,6 +12,7 @@ function showSlides(n) {
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none"; 
     }
+    console.log(slides);
     slides[slideIndex-1].style.display = "block"; 
 }
 
