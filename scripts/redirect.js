@@ -24,7 +24,7 @@
             const formatID = pageId[0].toUpperCase() + pageId.slice(1, pageId.length);
             // constructs the article id from the sidebar 
             const articleID = "btnSidebar"+formatID;
-            console.log(articleID);
+            // console.log(articleID);
             // selects parent article
             const parentArticle = document.getElementById(articleID);
             // adds highlighted class to the corresponding sidebar heading
