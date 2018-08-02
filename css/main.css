@@ -247,6 +247,12 @@ img {
     padding: .125rem 1rem; 
 }
 
+.linkFormatting {
+    font-size: 1.4rem;
+    letter-spacing: .75px;
+    margin: 1rem 0 0 0;
+}
+
 .ttup {
     text-transform: uppercase;
 }
