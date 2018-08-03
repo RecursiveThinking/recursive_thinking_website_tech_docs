@@ -38,7 +38,7 @@
             <p>
               The screenshots below show the local computer, which does not have the most recent changes from master. In this example,
               Person B has done the git commands mentioned in the previous section (status, add, commit). They made a commit
-              annotated as “this commit will error when pushed - as the head is the one commit farther than this local”.
+              annotated as “this commit will error when pushed - as the head is one commit further than this local”.
             </p>
             <img src="public/images/merge-conflict/merge1.jpg" alt="All files have been committed.">
             <p class="img-caption">
@@ -52,7 +52,7 @@
             <p class="img-caption">
               The user encounters a merge conflict, noted by the “! [rejected]” message.
             </p>
-            <p>
+            <p id="tutorial" >
               If you are experiencing a merge conflict, follow the steps below.
             </p>
           </article>
@@ -68,8 +68,9 @@
               <div class="slideshow-container">
                 <div id="firstSlide" class="mySlides">
                   <p>
-                    Resolve your merge conflict in this 8 step tutorial. Select the next slide to begin
+                    Resolve your merge conflict using this 8-step tutorial. Select the next slide to begin.
                   </p>
+                  <br><br>
                 </div>
 
                 <div class="mySlides">
@@ -78,25 +79,27 @@
                   </p>
                   <p>
                     1. Run
-                    <span class="codeSnippetGitCommand">git fetch --all</span>to download all commits from the remote repository (GitHub) that your local computer
+                    <span class="codeSnippetGitCommand">git fetch --all</span> to download all commits from the remote repository (GitHub) that your local computer
                     does not have.
                   </p>
                   <img src="public/images/merge-conflict/merge3.jpg" alt="The user should see “Fetching origin” after running the command.">
                   <p class="img-caption">
                     The user should see “Fetching origin” after running the command.
                   </p>
+                  <br><br>
                 </div>
 
                 <div class="mySlides">
                   <p>
                     2. Now you will need to rebase your local computer to master. This command allows you to walk through all changes (Person
                     A’s and Person B’s) and let you decide which to keep. Run
-                    <span class="codeSnippetGitCommand">git rebase origin/master</span>to do this.
+                    <span class="codeSnippetGitCommand">git rebase origin/master</span> to do this.
                   </p>
                   <img src="public/images/merge-conflict/merge4.jpg" alt="After running this rebase command, you will see everyone’s changes made to each respective file.">
                   <p class="img-caption">
                     After running this rebase command, you will see everyone’s changes made to each respective file.
                   </p>
+                  <br><br>
                 </div>
 
                 <div class="mySlides">
@@ -114,10 +117,12 @@
                   <p class="img-caption">
                     Accepting current changes, or HEAD, would mean the user chooses to accept “readme 3 Warren” as the final changes.
                   </p>
+                  <br><br>
                   <img src="public/images/merge-conflict/merge6.jpg" alt="ReadMe 1: Accept Current Changes (origin) result.">
                   <p class="img-caption">
                     ReadMe 1: Accept Current Changes (origin) result.
                   </p>
+                  <br><br>
                 </div>
 
                 <div class="mySlides">
@@ -137,10 +142,12 @@
                     Accepting incoming changes, or the changes from your local computer, would mean the user chooses to accept “Changes from
                     Local1” as the final changes.
                   </p>
+                  <br><br>
                   <img src="public/images/merge-conflict/merge8.jpg" alt="ReadMe 1: Accept Incoming Changes (local) result.">
                   <p class="img-caption">
                     ReadMe 1: Accept Incoming Changes (local) result.
                   </p>
+                  <br><br>
                 </div>
 
                 <div class="mySlides">
@@ -159,40 +166,46 @@
                     Accepting both changes, or the changes from your local computer and from master, would mean the user chooses to accept “readme
                     3 Warren” and “Changes from Local1” as the final changes.
                   </p>
+                  <br><br>
                   <img src="public/images/merge-conflict/merge10.jpg" alt="ReadMe 1: Accept Both Changes (origin and local) result.">
                   <p class="img-caption">
                     ReadMe 1: Accept Both Changes (origin and local) result.
                   </p>
+                  <br><br>
                   <img src="public/images/merge-conflict/merge11.jpg" alt="ReadMe 2: Accept Both Changes (origin and local) result.">
                   <p class="img-caption">
                     ReadMe 2: Accept Both Changes (origin and local) result.
                   </p>
+                  <br><br>
                   <img src="public/images/merge-conflict/merge12.jpg" alt="ReadMe 3: Accept Both Changes (origin and local) result.">
                   <p class="img-caption">
                     ReadMe 3: Accept Both Changes (origin and local) result.
                   </p>
+                  <br><br>
                 </div>
 
                 <div class="mySlides">
                   <p>
                     4. Run
-                    <span class="codeSnippetGitCommand">git rebase --continue</span>to apply your commits. You will first need to add your files.
+                    <span class="codeSnippetGitCommand">git rebase --continue</span> to apply your commits. You will first need to add your files.
                   </p>
                   <img src="public/images/merge-conflict/merge13.jpg" alt="The user is shown a message instructing them to add the files.">
                   <p class="img-caption">
                     The user is shown a message instructing them to add the files.
                   </p>
+                  <br><br>
                 </div>
 
                 <div class="mySlides">
                   <p>
                     5. Run
-                    <span class="codeSnippetGitCommand">git status</span>to see what file changes are untracked.
+                    <span class="codeSnippetGitCommand">git status</span> to see what file changes are untracked.
                   </p>
                   <img src="public/images/merge-conflict/merge14.jpg" alt="Untracked files are noted in red.">
                   <p class="img-caption">
                     Untracked files are noted in red.
                   </p>
+                  <br><br>
                 </div>
 
                 <div class="mySlides">
@@ -200,33 +213,37 @@
                     6. Run
                     <span class="codeSnippetGitCommand">git add
                       <filename>
-                    </span>for each file.
+                    </span> for each file.
                   </p>
                   <img src="public/images/merge-conflict/merge15.jpg" alt="You can add each file individually, or you can add all files using the git add . command.">
                   <p class="img-caption">
                     You can add each file individually, or you can add all files using the
-                    <span class="codeSnippetGitCommand">git add .</span>command.
+                    <span class="codeSnippetGitCommand">git add .</span> command.
                   </p>
+                  <br><br>
                   <img src="public/images/merge-conflict/merge16.jpg" alt="Adding ReadMe2.">
                   <p class="img-caption">
                     Adding ReadMe2.
                   </p>
+                  <br><br>
                   <img src="public/images/merge-conflict/merge17.jpg" alt="Adding ReadMe3.">
                   <p class="img-caption">
                     Adding ReadMe3.
                   </p>
+                  <br><br>
                   <img src="public/images/merge-conflict/merge18.jpg" alt="Running the
                   git status command shows that all three files have been added successfully, noted in green.">
                   <p class="img-caption">
                     Running the
-                    <span class="codeSnippetGitCommand">git status</span>command shows that all three files have been added successfully, noted in green.
+                    <span class="codeSnippetGitCommand">git status</span> command shows that all three files have been added successfully, noted in green.
                   </p>
+                  <br><br>
                 </div>
 
                 <div class="mySlides">
                   <p>
                     7. Continue the rebase by running
-                    <span class="codeSnippetGitCommand">git rebase --continue</span>in order to apply your commits.
+                    <span class="codeSnippetGitCommand">git rebase --continue</span> in order to apply your commits.
                   </p>
                   <img src="public/images/merge-conflict/merge19.jpg" alt="The original commit is being pushed, noted with the user’s original message “this commit will error when pushed - as the
                   head is one commit farther than this local.”">
@@ -234,18 +251,22 @@
                     The original commit is being pushed, noted with the user’s original message “this commit will error when pushed - as the
                     head is one commit farther than this local.”
                   </p>
+                  <br><br>
                   <img src="public/images/merge-conflict/merge20.jpg" alt="Save ReadMe 1.">
                   <p class="img-caption">
                     Save ReadMe 1.
                   </p>
+                  <br><br>
                   <img src="public/images/merge-conflict/merge21.jpg" alt="Save ReadMe 2.">
                   <p class="img-caption">
                     Save ReadMe 2.
                   </p>
+                  <br><br>
                   <img src="public/images/merge-conflict/merge22.jpg" alt="Save ReadMe 3.">
                   <p class="img-caption">
                     Save ReadMe 3.
                   </p>
+                  <br><br>
                 </div>
 
                 <div class="mySlides">
@@ -256,46 +277,54 @@
                   git status command.">
                   <p class="img-caption">
                     Run the
-                    <span class="codeSnippetGitCommand">git status</span>command.
+                    <span class="codeSnippetGitCommand">git status</span> command.
                   </p>
+                  <br><br>
                   <img src="public/images/merge-conflict/merge24.jpg" alt="Run the
                   git add command for ReadMe 1.">
                   <p class="img-caption">
                     Run the
-                    <span class="codeSnippetGitCommand">git add</span>command for ReadMe 1.
+                    <span class="codeSnippetGitCommand">git add</span> command for ReadMe 1.
                   </p>
+                  <br><br>
                   <img src="public/images/merge-conflict/merge25.jpg" alt="Run the
                   git add command for ReadMe 2 and 3.">
                   <p class="img-caption">
                     Run the
-                    <span class="codeSnippetGitCommand">git add</span>command for ReadMe 2 and 3.
+                    <span class="codeSnippetGitCommand">git add</span> command for ReadMe 2 and 3.
                   </p>
+                  <br><br>
                   <img src="public/images/merge-conflict/merge26.jpg" alt="Files have been successfully added, noted in green.">
                   <p class="img-caption">
                     Files have been successfully added, noted in green.
                   </p>
+                  <br><br>
                   <img src="public/images/merge-conflict/merge27.jpg" alt="Run the
                   git commit command.">
                   <p class="img-caption">
                     Run the
-                    <span class="codeSnippetGitCommand">git commit</span>command.
+                    <span class="codeSnippetGitCommand">git commit</span> command.
                   </p>
+                  <br><br>
                   <img src="public/images/merge-conflict/merge28.jpg" alt="Run the
                   git push origin master command.">
                   <p class="img-caption">
                     Run the
-                    <span class="codeSnippetGitCommand">git push origin master</span>command.
+                    <span class="codeSnippetGitCommand">git push origin master</span> command.
                   </p>
+                  <br><br>
                   <img src="public/images/merge-conflict/merge29.jpg" alt="Here is the commit history. The second commit is where the conflict occurs, the third commit is where the user is presented
                   with an error message upon pushing, and the final commit is after the conflicts have been resolved.">
                   <p class="img-caption">
                     Here is the commit history. The second commit is where the conflict occurs, the third commit is where the user is presented
                     with an error message upon pushing, and the final commit is after the conflicts have been resolved.
                   </p>
+                  <br><br>
                   <img src="public/images/merge-conflict/merge30.jpg" alt="When you click on a commit, you can see what changes have been accepted. This image shows the code of the final commit.">
                   <p class="img-caption">
                     When you click on a commit, you can see what changes have been accepted. This image shows the code of the final commit.
                   </p>
+                  <br><br>
                 </div>
                 <div class="nextPrev">
                   <button type="button" class="prevBtn" onclick="plusSlides(-1)">

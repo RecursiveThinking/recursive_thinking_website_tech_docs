@@ -42,6 +42,7 @@ function showSlides(n) {
 
 // Next/previous controls
 function plusSlides(n) {
+    document.getElementById('tutorial').scrollIntoView();
     showSlides(slideIndex += n);
 
 

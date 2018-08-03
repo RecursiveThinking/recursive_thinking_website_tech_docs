@@ -117,6 +117,10 @@ body {
     margin: .5rem 2rem;
 }
 
+.cell> .card > .bullet-exception > li {
+    list-style-type: circle;
+}
+
 .cell > .card > ul > li {
     list-style-type: none;
 }
