@@ -119,13 +119,14 @@ body {
 
 .cell> .card > .bullet-exception > li {
     list-style-type: circle;
+    margin-left: 3%;
 }
 
 .cell > .card > ul > li {
     list-style-type: none;
 }
 
-.cell > .card > ul > li, .cell > .card > ul > li > a,
+.cell > .card > ul > li, 
 .cell > .card > ul > li a,
 .cell > .card > ol > li, .cell > .card > ol > li > a,
 .cell > .card > ol > li a {
@@ -139,10 +140,14 @@ body {
     letter-spacing: 1px;
     margin-top: 1.25rem;
 }
-
+.cell > .card > ul li a:hover {
+    color: #00b371;
+}
 .cell > .card > ul > li > a {
-    font-size: 1.75rem;
-    letter-spacing: 1px;
+    font-size: 1.8rem;
+    letter-spacing: .75px;
+    margin: 1rem 0 0 0;
+    text-decoration-line: none;
 }
 
 .cell > .card > ul > h6 {
@@ -154,7 +159,11 @@ body {
 p {
     font-size: 1.4rem;
     letter-spacing: 1.1px;
-    margin: 1rem 0 0 0;
+    margin: .8rem 0 0 0;
+}
+
+.cell > .card > ul > li p {
+    margin-top: .3rem;
 }
 
 .cell > .card > ul > p {
