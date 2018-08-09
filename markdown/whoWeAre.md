@@ -1,4 +1,4 @@
-<h4 class="colorGrayb9 fw900 ttup">What is Recursive Thinking</h4>
+<h4 class="colorGray42 fw500 ttup">What is Recursive Thinking</h4>
 <hr>
 <p>
     Recursive Thinking (RT) is a collective of people dedicated to career development in the technology space. In order to learn from others, members needed a website to showcase their skillsets to establish connections in and out of RT meetings. As a way to build skills, developers, designers and technical writers work on the website together. By participating, you will provide RT collaborators with:
