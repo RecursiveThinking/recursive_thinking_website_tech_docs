@@ -1,5 +1,3 @@
-# Tell Me Something
-
 <h4 class="colorGrayb9 fw900 ttup">What is Recursive Thinking</h4>
 <hr>
 <p>
