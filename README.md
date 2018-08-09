@@ -8,7 +8,7 @@ To Start, simply git clone this repository to your computer, and open layout.htm
     
 ## To Clone the Project From Github:
     
-![GitHub Clone](_md/img/01_download_or_clone_from_github.jpg)
+![GitHub Clone](https://raw.githubusercontent.com/RecursiveThinking/recursive_thinking_website_tech_docs/master/_md/img/01_download_or_clone_from_github.jpg)
 
 -The following terminal command requires a basic knowledge of how to use a terminal/CLI (Command Line Interface).  Additionally, the git command requires the installation of Git ([Get Git Here](https://git-scm.com/)) on your system.
     
