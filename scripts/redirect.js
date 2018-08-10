@@ -1,18 +1,18 @@
 (function() {
 
     function appendPage(pageId) {
-        console.log('pageId: ', pageId);
+        // console.log('pageId: ', pageId);
         // \/-- if the logs error here - you need to add a link to layout
         const mainHTML = document.getElementById(pageId).import;
-        console.log(mainHTML);
+        // console.log(mainHTML);
         const template = mainHTML.getElementById(pageId+'HTML').cloneNode(true);
-        console.log(template);
+        // console.log(template);
         const main = document.getElementById('main-content');
         main.innerHTML = '';
         main.appendChild(template);
         sideHighlight(pageId);
         // Demonstrating that the template has loaded
-        console.log(document.getElementById(pageId+'HTML'));
+        // console.log(document.getElementById(pageId+'HTML'));
     }
     
     //Highlights tabs based on the relationship between pageId and sidebar article id. Can highlight each sidebar heading on load.  
@@ -35,7 +35,7 @@
     // Appends HTML template, then runs associated setup scripts
     function hashRouting() {
         const location = window.location.hash.replace('#','');
-        console.log('LOCATION', location);
+        // console.log('LOCATION', location);
         switch(location){
             case 'whoWeAre':
                 appendPage('whoWeAre');
