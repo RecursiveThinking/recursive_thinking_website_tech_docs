@@ -188,12 +188,15 @@ img {
     color: #424041;
 }
 
-.alpha-list {
-    list-style-type: lower-alpha;
+.alpha-list, .unorder-list {
     margin-left: 5%;
     margin-top: 1%;
     font-size: 3.4rem;
     letter-spacing: 1.1px;
+}
+
+.alpha-list {
+    list-style-type: lower-alpha;
 }
 
 .roman-list {
