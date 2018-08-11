@@ -28,17 +28,137 @@
             <h4 class="colorGray42 fw500 ttup">Deploy BackEnd Stack</h4>
             <hr>
             <p>
-              Coming Soon!
+              Please make sure that all the prerequisites are properly installed and configured.  If there is any doubt, please review the previous tab “Back End Prerequisites”.
+              <br>
+              There are three major components to the Back End AWS Stack Deployment.
             </p>
-            <!-- <ul>
+            <ol>
               <li>
-                <a href="#backEndPreRequisites">PreRequisites</a>
+                <h5>deployrtw.py</h5>
                 <p>
-                  This section illustrates each PreRequisite needed for building the Website's AWS Backend.
+                  deployrtw.py contains several different aws cli commands that will execute the configuration options contained inside the template.yml file.
+                  <br><br>
+                  In addition to building the AWS stack, the deployrtw.py file also:
                 </p>
-
+                <ol class="alpha-list">
+                  <li>
+                    <p>
+                      Autofills our DynamoDB tables with values, providing default inputs for the skills table.
+                    </p>  
+                  </li>
+                  <li>
+                    <p>
+                      Exports a .json file of credentials for cognito and s3, both of which are used to connect our front end and back end components.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Uploads all of our Lambdas.
+                    </p>
+                  </li>
+                </ol>
               </li>
-            </ul> -->
+              <li>
+                <h5>template.yml</h5>
+                <p>
+                  This file is a CloudFormation (the Amazon Web Service which will build our stack) template containing the configuration options for all services web will use for our site.  These include:
+                </p>
+                <ul class="unorder-list">
+                  <li>
+                    <p>Api Gateway</p> 
+                  </li>
+                  <li>
+                    <p>Lambda</p>
+                  </li>
+                  <li>
+                    <p>Dynamo DB</p>
+                  </li>
+                  <li>
+                    <p>Cognito</p>
+                  </li>
+                  <li>
+                    <p>s3</p>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h5>Supporting files which include:</h5>
+                <ol class="alpha-list">
+                  <li>
+                    <p>
+                      lambdas
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      .json files of default information for DynamoDB Tables
+                    </p>
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </article>
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
+          <article class="profileStats card">
+            <h4 class="colorGray42 fw500 ttup">CloudFormation Configuration</h4>
+            <hr>
+            <p>
+              First, login into your AWS account, and select “CloudFormation” from that huge list of AWS services.  
+            </p>
+            <img src="public/images/02/07/stack_deployment_01a_CloudFormation.jpg" alt="caption needed">
+            <p class="img-caption">
+              CloudFormation caption needed
+            </p>
+            <p>
+              If CloudFormation isn’t easily visible, just type it into the search bar.
+            </p>
+            <img src="public/images/02/07/stack_deployment_01b_CloudFormation_Search.jpg" alt="caption needed">
+            <p class="img-caption">
+              CloudFormation caption needed
+            </p>
+            <p>
+              Once in CloudFormation, you’ll see a list of available stacks...in this case, there are no stacks, because we haven’t deployed yet!   
+            </p>
+            <img src="public/images/02/07/stack_deployment_02_CloudFormation_Stacks.jpg" alt="caption needed">
+            <p class="img-caption">
+              CloudFormation caption needed
+            </p>
+          </article>
+          <article class="profileStats card">
+              <h4 class="colorGray42 fw500 ttup">Deployment Tutorial</h4>
+              <hr>
+              <p>
+                1. Make sure that you are inside recursive_thinking_server in your terminal/CLI. 
+              </p>
+              <img src="public/images/02/07/stack_deployment_03_terminal.jpg" alt="caption needed">
+              <p class="img-caption">
+                Deployment caption needed
+              </p>
+              <p>
+                2. Run the command <span class="codeSnippetGitCommand">./deployrtw.py</span> in your terminal.   
+              </p>
+              <img src="public/images/02/07/stack_deployment_04_deployrtw_py.jpg" alt="caption needed">
+              <p class="img-caption">
+                Deployment caption needed
+              </p>
+              <p>
+                3. Watch the CLI/terminal output.  Make sure that all the commands in the script execute successfully and do not error. 
+              </p>
+              <img src="public/images/02/07/stack_deployment_05_deployrtw_py_secrets.jpg" alt="caption needed">
+              <p class="img-caption">
+                Deployment caption needed
+              </p>
+              <p>
+                4. When all the commands execute successfully, log back into your AWS account and select CloudFormation.  “recursive-thinking-server” should now be an available stack, and make sure the message reads “CREATE_COMPLETE” and is green.  A different message, especially one in red, generally indicates an error.   
+              </p>
+              <img src="public/images/02/07/stack_deployment_06_CloudFormation_Stacks_Success.jpg" alt="caption needed">
+              <p class="img-caption">
+                Deployment caption needed
+              </p>
           </article>
         </div>
       </div>

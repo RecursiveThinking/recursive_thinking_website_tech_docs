@@ -31,14 +31,29 @@
 
                         <ol>
                             <li>
-                                Re-initialize a Git repository in your project folder by running a <span class="codeSnippetGitCommand">git init</span> command in your terminal.
+                                Make sure that the terminal is in the correct project directory, and that project directory is a valid repository.  This can be done by running a <span class="codeSnippetGitCommand">git status</span> command.  There are two possible outcomes:
                             </li>
                             <ol class="alpha-list">
                                 <li>
                                     <p>
-                                        When you run this command, you should get a “Re-initializing git repository in this location” message. If you do not get this message, or get a message that says “Initializing git repository in this location,” stop, as something went wrong in the cloning process. 
+                                        The terminal is not in a valid repository/location.  If this is the case, you will see the error “fatal: Not a git repository (or any of the parent directories): .git”
+                                        <br><br>
+		                                If you see this, please navigate into a valid project/repository folder in terminal.
                                     </p>
                                 </li>
+                                <img src="public/images/02/04/git_check_01_git_status_error.jpg" alt="The fatal status">
+                                <p class="img-caption">
+                                    The fatal status.
+                                </p>
+                                <li>
+                                    <p>
+                                        The terminal is in a valid respository/location.  If this is the case, you will see some notifications about the status of that repository and the current status of any tracked/untracked files that have not yet been committed.
+                                    </p>
+                                </li>
+                                <img src="public/images/02/04/git_check_02_git_status_success.jpg" alt="The successful status">
+                                <p class="img-caption">
+                                    The successful status.
+                                </p>
                             </ol>
                             <li>
                                 Add untracked files. 
