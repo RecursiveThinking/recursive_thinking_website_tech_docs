@@ -159,6 +159,80 @@
               <p class="img-caption">
                 Deployment caption needed
               </p>
+              <p>
+                5. Ouch, my stack!
+              </p>
+              <p>
+                Some users may go through this entire setup process, run the script, receive a message “Successfully created/updated stack - recursive-thinking-server” in terminal but when they go to the AWS CloudFormation Console, the stack does not appear!
+              </p>
+              <img src="public/images/02/07/where_is_my_stack_00_no_stack.jpg" alt="caption needed">
+              <p class="img-caption">
+                Deployment caption needed
+              </p>
+              <p>
+                The context is this - AWS has many regions (at the time of writing there are 15 regions worldwide).  For the Back End stack, it is possible to have the same stack in multiple locations, as the stack has a region identifier in its Stack ID.  (This can be seen by clicking the checkbox for a stack, and looking for the Stack ID in the Overview Tab)
+              </p>
+              <p>
+                The AWS region where the stack gets published to is held in the .config file created during the AWS CLI configuration steps. If the current AWS CLI profile is set to a Default region of us-west-2, then the stack is going to be in the Cloudformation Console for JUST that AWS region.
+              </p>
+              <p>
+                The problem here is that when you first create an AWS account, it always defaults to AWS region us-east-1.
+              </p>
+              <p>
+                So the fix, if you know your stack was created successfully, and you know what AWS region is specified in your .config file, go the CloudFormation Console, and click on the “button” that is second from the right.  Clicking this button will reveal a drop down of all AWS regions.
+              </p>
+              <img src="public/images/02/07/where_is_my_stack_01_aws_stack_regions.jpg" alt="caption needed">
+              <p class="img-caption">
+                Deployment caption needed
+              </p>
+              <p>
+                In this dropdown, select the region that corresponds to your .config file setting.  In this case, we would select “US West (Oregon)” as this option is us-west-2, which is the region specified in this user’s .config file.
+              </p>
+              <img src="public/images/02/07/where_is_my_stack_02_aws_stack_correct_region.jpg" alt="caption needed">
+              <p class="img-caption">
+                Deployment caption needed
+              </p>
+          </article>
+          <article class="profileStats card">
+            <h4 class="colorGray42 fw500 ttup">Deploy Back End- Errors and Solutions</h4>
+            <hr>
+            <ol>
+              <li>
+                <h5>Error:</h5>
+                <p>
+                  upload failed: .\{LambdaFolderNameHere}.zip to s3://recursive-thinking-assets-us-west-2-{Custom Folder Name Based on Users Github Email Address}/{Dated Folder (Time of Running Script}/{LambdaFolderNameHere}.zip Parameter validation failed:
+                </p>
+                <p>
+                  Invalid bucket name “recursive-thinking-assets-us-west-2-{Custom Folder Name Based on Users Github Email Addresses}”: Bucket name must match the regex “^[a-zA-Z0-9.\-_]{1, 255}$”
+                </p>
+                <h5>Context:</h5>
+                <p>
+                  No s3 bucket (or folder in a bucket) can have the same name.  (this is across all buckets in all users s3).  deployrtw.py creates a unique bucket name using both the stack name and the email address provided in your Git configuration.
+                </p>
+                <h5>Solution:</h5>
+                <p>
+                  Check to see if a valid email is configured in Git by running the command <span class="codeSnippetGitCommand">git config --global user.email</span>
+                </p>
+                <p>
+                  What should log to the screen is a properly formatted email address, like {yourNameHere}@{aEmailServiceProvider}.com.
+                </p>
+                <p>
+                  If you do not see a valid email returned, then please set it using the command <span class="codeSnippetGitCommand">git config --global user.email "{yourNameHere}@{aEmailServiceProvider}.com"</span>
+                </p>
+                <p>
+                  (and please note that {yourNameHere} and {aEmailServiceProvider} represent unique information that you provide.  Do not enter these as values…)
+                </p>
+                <p>
+                  Test this again by running the command <span class="codeSnippetGitCommand">git config --global user.email</span>
+                </p>
+                <p>
+                  At this point, you should have a valid email input.  If you don’t, I award you no points, and may god have mercy on your soul.
+                </p>
+                <p>
+                  Re-run the script with the valid email and you should not see this error message.  If the message persists, you may have invalid characters in the email string which fails the regex.  So just fix that.
+                </p>
+              </li>
+            </ol>
           </article>
         </div>
       </div>
