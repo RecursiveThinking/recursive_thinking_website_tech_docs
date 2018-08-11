@@ -89,22 +89,48 @@
                 </p>
                 
                 <p>
-                  Once you install AWS CLI - you'll need to configure it so that it points to your Amazon Web Service Account. Please follow the instructions at the link above to do this.
+                  Once you install AWS CLI - you will need to configure it so that it points to your Amazon Web Service Account. Please follow the instructions at the link above to do this.
                 </p>
                 <p>
                   Please note that there has been some confusion with the instructions above when it gets to "To get the access key ID and secret access key for an IAM user" --> Item 3 ("Choose your IAM user name"). Since creating an IAM resource and setting permissions can be a bit of a rabbit hole, we've made a step by step guide on a card below. Creating an IAM Resource and Setting Permissions (needs anchor tag?)
                 </p>
                 <p>
-                  It is recommended that you check The AWS credentials and config File as described in the documentation.
+                  It is recommended that you check the AWS credentials and config file as described in the documentation.
                 </p>
                 <p>
-                  The credentials file should contain the AWS Access Key ID and the AWS Secret Access Key
+                  The credentials file should contain the AWS Access Key ID and the AWS Secret Access Key.
                 </p>
                 <p>
                   The config file should contain the region name and default output format.
                 </p>
                 <p>
                   If these files have both these keys and the correct values from your account, you should have a properly configured AWS CLI!
+                </p>
+              </li>
+              <li>
+                <p>
+                  Valid Git Email Configuration
+                </p>
+                <p>
+                  No s3 bucket (or folder in a bucket) can have the same name (this is across all buckets in all users s3). Here, deployrtw.py creates a unique bucket name using both the stack name and the email address provided in your Git configuration.
+                </p>
+                <p>
+                  Because of this, the local Git config needs a valid email!
+                </p>
+                <p>
+                  First, check to see if a valid email is configured in Git by running the <span class="codeSnippetGitCommand">git config --global user.email</span>
+                </p>
+                <p>
+                  What should log to the screen is a properly formatted email address such as {yourNameHere}@{aEmailServiceProvider}.com
+                </p>
+                <p>
+                  If you do not see a valid email returned, then set it using the command <span class="codeSnippetGitCommand">git config --global user.email "{yourNameHere}{aEmailServiceProvider}.com"</span>. (and please note that {yourNameHere} and {aEmailServiceProvider} represent unique information that you provide.  Do not enter these as values…).
+                </p>
+                <p>
+                  Test this again by running <span class="codeSnippetGitCommand">git config --global user.email</span>
+                </p>
+                <p>
+                  At this point, you should have a valid email input.
                 </p>
               </li>
             <ol>
