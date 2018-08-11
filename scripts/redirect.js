@@ -32,14 +32,23 @@
         });
     }
 
+    function load(page) {
+        fetch(page)
+            .then(response => response.text()) // return the text of the first successful file
+            .then(body => {
+                document.querySelector('#main-content').innerHTML = body;
+                sideHighlight(page);
+            })
+    }
+
     // Appends HTML template, then runs associated setup scripts
     function hashRouting() {
         const location = window.location.hash.replace('#','');
         console.log('LOCATION', location);
         switch(location){
             case 'whoWeAre':
-                appendPage('whoWeAre');
-                setUpWhoWeAre();
+                load('templates/whoWeAre.html');
+                // setUpWhoWeAre();
                 break;
             case 'gettingStarted':
                 appendPage('gettingStarted');
