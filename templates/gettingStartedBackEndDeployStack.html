@@ -153,7 +153,7 @@
                   Recursive-thinking-server is now a stack.
                 </p>
               </div>
-              <div class="nextPrev">
+              <div id="tutorial2" class="nextPrev">
                 <button type="button" class="prevBtn" onclick="plusSlides(-1)">
                   < Previous</button>
                     <button type="button" class="nextBtn" onclick="plusSlides(1)">Next ></button>
@@ -162,80 +162,107 @@
             <br>
           </article>
           <article class="profileStats card">
-              <h4 class="colorGray42 fw500 ttup">Deployment Process</h4>
-              <hr>
-              <p>
-                1. Make sure that you are inside recursive_thinking_server in your terminal/CLI. 
-              </p>
-              <br>
-              <img src="public/images/02/07/stack_deployment_03_terminal.jpg" alt="In recursive_thinking_server.">
-              <p class="img-caption">
-                In recursive_thinking_server.
-              </p>
-              <p>
-                2. Run the command:
-              </p>
-              <p>
-                <span class="codeSnippetGitCommand">./deployrtw.py</span>  
-              </p>
-              <br>
-              <img src="public/images/02/07/stack_deployment_04_deployrtw_py.jpg" alt="Running the ./deployrtw.py command.">
-              <p class="img-caption">
-                Running the <span class="codeSnippetGitCommand">./deployrtw.py</span> command.
-              </p>
-              <p>
-                3. Watch the CLI/terminal output.  Make sure that all the commands in the script execute successfully and do not error. 
-              </p>
-              <br>
-              <img src="public/images/02/07/stack_deployment_05_deployrtw_py_secrets.jpg" alt="Successful command execution.">
-              <p class="img-caption">
-                Successful command execution.
-              </p>
-              <p>
-                4. When all the commands execute successfully, log in to your AWS account again and select CloudFormation.  “recursive-thinking-server” should now be an available stack. Make sure the message reads “CREATE_COMPLETE”, and is green.  A different message, especially one in red, generally indicates an error.   
-              </p>
-              <br>
-              <img src="public/images/02/07/stack_deployment_06_CloudFormation_Stacks_Success.jpg" alt="Recursive-thinking-server is now a stack.">
-              <p class="img-caption">
-                Recursive-thinking-server is now a stack.
-              </p>
-              <p>
-                Creation Errors
-              </p>
-              <p>
-                You may go through the entire setup process above, run the script, receive a message that says “Successfully created/updated stack - recursive-thinking-server” in your terminal but when you go to the AWS CloudFormation console, the stack does not appear. Read below to successfully find the stack.
-              </p>
-              <br>
-              <img src="public/images/02/07/where_is_my_stack_00_no_stack.jpg" alt="The recursive-thinking-server stack does not appear.">
-              <p class="img-caption">
-                The recursive-thinking-server stack does not appear.
-              </p>
-              <p>
-                AWS has many regions (at the time of writing there are 15 regions worldwide). For the back end stack, it is possible to have the same stack in multiple locations, as the stack has a region identifier in its stack ID.  (This can be seen by clicking the checkbox for a stack, and looking for the stack ID in the Overview tab)
-              </p>
-              <p>
-                The AWS region where the stack gets published to is held in the .config file created during the AWS CLI configuration steps. If the current AWS CLI profile is set to a default region of us-west-2, then the stack is going to be in the CloudFormation console for just that AWS region.
-              </p>
-              <p>
-                The problem here is that when you first create an AWS account, it always defaults to AWS region us-east-1.
-              </p>
-              <p>
-                To fix this, if you know your stack was created successfully, and you know what AWS region is specified in your .config file, go the CloudFormation console, and click on the dropdown menu button that is second from the right. Clicking this button will reveal a drop down of all AWS regions.
-              </p>
-              <br>
-              <img src="public/images/02/07/where_is_my_stack_01_aws_stack_regions.jpg" alt="A list of all AWS regions.">
-              <p class="img-caption">
-                A list of all AWS regions.
-              </p>
-              <p>
-                In this dropdown, select the region that corresponds to your .config file setting.  In this case, Seattle users would select “US West (Oregon)” as this option is us-west-2, which is the region specified in this user’s .config file.
-              </p>
-              <br>
-              <img 
-              src="public/images/02/07/where_is_my_stack_02_aws_stack_correct_region.jpg" alt="The recursive-thinking-server stack is successfully shown.">
-              <p class="img-caption">
-                The recursive-thinking-server stack is successfully shown.
-              </p>
+            <h4 class="colorGray42 fw500 ttup">Deployment Process</h4>
+            <hr>
+            <div class="slideshow-container">
+              <div class="mySlides1">
+                <p>
+                  Click next to begin a 7 step tutorial on deploying the back end.
+                </p>
+              </div>
+              <div class="mySlides1">
+                <p>
+                  1. Make sure that you are inside recursive_thinking_server in your terminal/CLI. 
+                </p>
+                <br>
+                <img src="public/images/02/07/stack_deployment_03_terminal.jpg" alt="In recursive_thinking_server.">
+                <p class="img-caption">
+                  In recursive_thinking_server.
+                </p>
+              </div>
+              <div class="mySlides1">
+                <p>
+                  2. Run the command:
+                </p>
+                <p>
+                  <span class="codeSnippetGitCommand">./deployrtw.py</span>  
+                </p>
+                <br>
+                <img src="public/images/02/07/stack_deployment_04_deployrtw_py.jpg" alt="Running the ./deployrtw.py command.">
+                <p class="img-caption">
+                  Running the <span class="codeSnippetGitCommand">./deployrtw.py</span> command.
+                </p>
+              </div>
+              <div class="mySlides1">
+                <p>
+                  3. Watch the CLI/terminal output.  Make sure that all the commands in the script execute successfully and do not error. 
+                </p>
+                <br>
+                <img src="public/images/02/07/stack_deployment_05_deployrtw_py_secrets.jpg" alt="Successful command execution.">
+                <p class="img-caption">
+                  Successful command execution.
+                </p>
+              </div>
+              <div class="mySlides1">
+                <p>
+                  4. When all the commands execute successfully, log in to your AWS account again and select CloudFormation.  “recursive-thinking-server” should now be an available stack. Make sure the message reads “CREATE_COMPLETE”, and is green.  A different message, especially one in red, generally indicates an error. Continue the tutorial if the stack is not displaying correctly.
+                </p>
+                <br>
+                <img src="public/images/02/07/stack_deployment_06_CloudFormation_Stacks_Success.jpg" alt="Recursive-thinking-server is now a stack.">
+                <p class="img-caption">
+                  Recursive-thinking-server is now a stack.
+                </p>
+              </div>
+              <div class="mySlides1">
+                <h5>
+                  Creation Errors
+                </h5>
+                <p>
+                  You may go through the entire setup process above, run the script, receive a message that says “Successfully created/updated stack - recursive-thinking-server” in your terminal but when you go to the AWS CloudFormation console, the stack does not appear. Read below to successfully find the stack.
+                </p>
+                <br>
+                <img src="public/images/02/07/where_is_my_stack_00_no_stack.jpg" alt="The recursive-thinking-server stack does not appear.">
+                <p class="img-caption">
+                  The recursive-thinking-server stack does not appear.
+                </p>
+              </div>
+              <div class="mySlides1">
+                <p>
+                  AWS has many regions (at the time of writing there are 15 regions worldwide). For the back end stack, it is possible to have the same stack in multiple locations, as the stack has a region identifier in its stack ID.  (This can be seen by clicking the checkbox for a stack, and looking for the stack ID in the Overview tab)
+                </p>
+                <p>
+                  The AWS region where the stack gets published to is held in the .config file created during the AWS CLI configuration steps. If the current AWS CLI profile is set to a default region of us-west-2, then the stack is going to be in the CloudFormation console for just that AWS region.
+                </p>
+                <p>
+                  The problem here is that when you first create an AWS account, it always defaults to AWS region us-east-1.
+                </p>
+                <p>
+                  To fix this, if you know your stack was created successfully, and you know what AWS region is specified in your .config file, go the CloudFormation console, and click on the dropdown menu button that is second from the right. Clicking this button will reveal a drop down of all AWS regions.
+                </p>
+                <br>
+                <img src="public/images/02/07/where_is_my_stack_01_aws_stack_regions.jpg" alt="A list of all AWS regions.">
+                <p class="img-caption">
+                  A list of all AWS regions.
+                </p>
+              </div>
+              <div class="mySlides1">
+                <p>
+                  In this dropdown, select the region that corresponds to your .config file setting.  In this case, Seattle users would select “US West (Oregon)” as this option is us-west-2, which is the region specified in this user’s .config file.
+                </p>
+                <br>
+                <img 
+                src="public/images/02/07/where_is_my_stack_02_aws_stack_correct_region.jpg" alt="The recursive-thinking-server stack is successfully shown.">
+                <p class="img-caption">
+                  The recursive-thinking-server stack is successfully shown.
+                </p>
+              </div>
+              <div class="nextPrev">
+                <button type="button" class="prevBtn" onclick="plusSlides1(-1)">
+                  < Previous</button>
+                <button type="button" class="nextBtn" onclick="plusSlides1(1)">Next ></button>
+              </div>
+            </div>
+            <br>
           </article>
           <article class="profileStats card">
             <h4 class="colorGray42 fw500 ttup">Deploy Back End- Terminal/CLI Output Breakdown</h4>
@@ -243,11 +270,17 @@
             <p>
               Below is an image of the current back end deployment, with major blocks highlighted and labeled. This is provided to help as a general understanding of how the script works and its major components.
             </p>
+            <div>
+              <button type='button', class="expand" onclick="expandImg()">Show Image</button>
+            </div>
+            
             <br>
-            <img src="public/images/02/07/stack_deployment_script_component_breakdown.jpg" alt="Back end deployment.">
-            <p class="img-caption">
-              Back end deployment.
-            </p>
+            <div id="scriptImg" class="hideImg">
+              <img src="public/images/02/07/stack_deployment_script_component_breakdown.jpg" alt="Back end deployment.">
+              <p class="img-caption">
+                Back end deployment.
+              </p>
+            </div>
           </article>
           <article class="profileStats card">
             <h4 class="colorGray42 fw500 ttup">Deploy Back End- Errors and Solutions</h4>

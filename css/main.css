@@ -140,6 +140,11 @@ body {
     letter-spacing: 1px;
     margin-top: 1.25rem;
 }
+h5 {
+    font-size: 1.75rem;
+    letter-spacing: 1px;
+    margin-top: 1.25rem;
+}
 .cell > .card > ul li a:hover {
     color: #00b371;
 }
@@ -217,12 +222,21 @@ img {
     display: none;
 }
 
+.hideImg {
+    display: none;
+}
+
+.expand {
+    margin-top: 2%;
+    margin-left: 40%;
+}
+
 .nextPrev {
 
     display: inline-block;
 }
 
-.prevBtn, .nextBtn {
+.prevBtn, .nextBtn, .expand {
     cursor: pointer;
     border-radius: 3px 3px 3px 3px;
     background-color: rgb(70, 233, 255);
