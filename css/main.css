@@ -193,6 +193,22 @@ img {
     color: #424041;
 }
 
+.getStartedLink {
+    /* font-size: 1.75rem;
+    letter-spacing: 1px;
+    margin-top: 1.25rem; */
+    color: #006842;
+    text-decoration: none;
+}
+
+.linkText {
+    font-size: 1.75rem;
+    letter-spacing: 1px;
+    margin-top: 1.25rem;
+    text-transform: uppercase;
+    
+}
+
 .alpha-list, .unorder-list, .roman-list {
     margin-left: 5%;
     margin-top: 1%;
@@ -232,7 +248,7 @@ img {
 
 .expand {
     margin-top: 2%;
-    margin-left: 40%;
+
 }
 
 .nextPrev {
