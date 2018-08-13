@@ -25,18 +25,18 @@
         </div>
         <div class="cell">
           <article class="profileStats card">
-            <h4 class="colorGray42 fw500 ttup">Deploy BackEnd Stack</h4>
+            <h4 class="colorGray42 fw500 ttup">Deploy Back End Stack</h4>
             <hr>
             <p>
-              Please make sure that all the prerequisites are properly installed and configured.  If there is any doubt, please review the previous tab “Back End Prerequisites”.
+              Please make sure that all the prerequisites are properly installed and configured.  If there is any doubt, please review the previous tab, Back end prerequisites.
               <br>
-              There are three major components to the Back End AWS Stack Deployment.
+              There are three major components to the back end AWS stack deployment.
             </p>
             <ol>
               <li>
                 <h5>deployrtw.py</h5>
                 <p>
-                  deployrtw.py contains several different aws cli commands that will execute the configuration options contained inside the template.yml file.
+                  deployrtw.py contains several different AWS CLI commands that will execute the configuration options contained inside the template.yml file.
                   <br><br>
                   In addition to building the AWS stack, the deployrtw.py file also:
                 </p>
@@ -48,7 +48,7 @@
                   </li>
                   <li>
                     <p>
-                      Exports a .json file of credentials for cognito and s3, both of which are used to connect our front end and back end components.
+                      Exports a .json file of credentials for cognito and S3, both of which are used to connect our front end and back end components.
                     </p>
                   </li>
                   <li>
@@ -65,7 +65,7 @@
                 </p>
                 <ul class="unorder-list">
                   <li>
-                    <p>Api Gateway</p> 
+                    <p>API Gateway</p> 
                   </li>
                   <li>
                     <p>Lambda</p>
@@ -77,7 +77,7 @@
                     <p>Cognito</p>
                   </li>
                   <li>
-                    <p>s3</p>
+                    <p>S3</p>
                   </li>
                 </ul>
               </li>
@@ -97,6 +97,7 @@
                 </ol>
               </li>
             </ol>
+            <p>Now that we have covered the concept, follow the process below.</p>
           </article>
           <div id="myModal" class="modal">
             <span class="close">&times;</span>
@@ -107,58 +108,165 @@
             <h4 class="colorGray42 fw500 ttup">CloudFormation Configuration</h4>
             <hr>
             <p>
-              First, login into your AWS account, and select “CloudFormation” from that huge list of AWS services.  
+              1. Log in into your AWS account, and select “CloudFormation” from the list of AWS services.  
             </p>
             <img src="public/images/02/07/stack_deployment_01a_CloudFormation.jpg" alt="caption needed">
             <p class="img-caption">
               CloudFormation caption needed
             </p>
             <p>
-              If CloudFormation isn’t easily visible, just type it into the search bar.
+              If CloudFormation is not easily visible, just type it into the search bar.
             </p>
             <img src="public/images/02/07/stack_deployment_01b_CloudFormation_Search.jpg" alt="caption needed">
             <p class="img-caption">
               CloudFormation caption needed
             </p>
             <p>
-              Once in CloudFormation, you’ll see a list of available stacks...in this case, there are no stacks, because we haven’t deployed yet!   
+              Once in CloudFormation, you will see a list of available stacks. In this case, however, there will be no stacks, because we have not deployed yet.   
             </p>
             <img src="public/images/02/07/stack_deployment_02_CloudFormation_Stacks.jpg" alt="caption needed">
             <p class="img-caption">
               CloudFormation caption needed
             </p>
+            <p>
+              So, at the end of these instructions, expect to see "recursive-thinking-server" as a row on the page. If you see that, you were successful.
+            </p>
           </article>
           <article class="profileStats card">
-              <h4 class="colorGray42 fw500 ttup">Deployment Tutorial</h4>
+              <h4 class="colorGray42 fw500 ttup">Deployment Process</h4>
               <hr>
               <p>
                 1. Make sure that you are inside recursive_thinking_server in your terminal/CLI. 
               </p>
-              <img src="public/images/02/07/stack_deployment_03_terminal.jpg" alt="caption needed">
+              <img src="public/images/02/07/stack_deployment_03_terminal.jpg" alt="In recursive_thinking_server.">
               <p class="img-caption">
-                Deployment caption needed
+                In recursive_thinking_server.
               </p>
               <p>
-                2. Run the command <span class="codeSnippetGitCommand">./deployrtw.py</span> in your terminal.   
+                2. Run the command:
               </p>
-              <img src="public/images/02/07/stack_deployment_04_deployrtw_py.jpg" alt="caption needed">
+              <p>
+                <span class="codeSnippetGitCommand">./deployrtw.py</span>  
+              </p>
+              <img src="public/images/02/07/stack_deployment_04_deployrtw_py.jpg" alt="Running the ./deployrtw.py command.">
               <p class="img-caption">
-                Deployment caption needed
+                Running the <span class="codeSnippetGitCommand">./deployrtw.py</span> command.
               </p>
               <p>
                 3. Watch the CLI/terminal output.  Make sure that all the commands in the script execute successfully and do not error. 
               </p>
-              <img src="public/images/02/07/stack_deployment_05_deployrtw_py_secrets.jpg" alt="caption needed">
+              <img src="public/images/02/07/stack_deployment_05_deployrtw_py_secrets.jpg" alt="Successful command execution.">
               <p class="img-caption">
-                Deployment caption needed
+                Successful command execution.
               </p>
               <p>
-                4. When all the commands execute successfully, log back into your AWS account and select CloudFormation.  “recursive-thinking-server” should now be an available stack, and make sure the message reads “CREATE_COMPLETE” and is green.  A different message, especially one in red, generally indicates an error.   
+                4. When all the commands execute successfully, log in to your AWS account again and select CloudFormation.  “recursive-thinking-server” should now be an available stack. Make sure the message reads “CREATE_COMPLETE”, and is green.  A different message, especially one in red, generally indicates an error.   
               </p>
-              <img src="public/images/02/07/stack_deployment_06_CloudFormation_Stacks_Success.jpg" alt="caption needed">
+              <img src="public/images/02/07/stack_deployment_06_CloudFormation_Stacks_Success.jpg" alt="Recursive-thinking-server is now a stack.">
               <p class="img-caption">
-                Deployment caption needed
+                Recursive-thinking-server is now a stack.
               </p>
+              <p>
+                Creation Errors
+              </p>
+              <p>
+                You may go through the entire setup process above, run the script, receive a message that says “Successfully created/updated stack - recursive-thinking-server” in your terminal but when you go to the AWS CloudFormation console, the stack does not appear. Read below to successfully find the stack.
+              </p>
+              <img src="public/images/02/07/where_is_my_stack_00_no_stack.jpg" alt="The recursive-thinking-server stack does not appear.">
+              <p class="img-caption">
+                The recursive-thinking-server stack does not appear.
+              </p>
+              <p>
+                AWS has many regions (at the time of writing there are 15 regions worldwide). For the back end stack, it is possible to have the same stack in multiple locations, as the stack has a region identifier in its stack ID.  (This can be seen by clicking the checkbox for a stack, and looking for the stack ID in the Overview tab)
+              </p>
+              <p>
+                The AWS region where the stack gets published to is held in the .config file created during the AWS CLI configuration steps. If the current AWS CLI profile is set to a default region of us-west-2, then the stack is going to be in the CloudFormation console for just that AWS region.
+              </p>
+              <p>
+                The problem here is that when you first create an AWS account, it always defaults to AWS region us-east-1.
+              </p>
+              <p>
+                To fix this, if you know your stack was created successfully, and you know what AWS region is specified in your .config file, go the CloudFormation console, and click on the dropdown menu button that is second from the right. Clicking this button will reveal a drop down of all AWS regions.
+              </p>
+              <img src="public/images/02/07/where_is_my_stack_01_aws_stack_regions.jpg" alt="A list of all AWS regions.">
+              <p class="img-caption">
+                A list of all AWS regions.
+              </p>
+              <p>
+                In this dropdown, select the region that corresponds to your .config file setting.  In this case, Seattle users would select “US West (Oregon)” as this option is us-west-2, which is the region specified in this user’s .config file.
+              </p>
+              <img src="public/images/02/07/where_is_my_stack_02_aws_stack_correct_region.jpg" alt="The recursive-thinking-server stack is successfully shown.">
+              <p class="img-caption">
+                The recursive-thinking-server stack is successfully shown.
+              </p>
+          </article>
+          <article class="profileStats card">
+            <h4 class="colorGray42 fw500 ttup">Deploy Back End- Terminal/CLI Output Breakdown</h4>
+            <hr>
+            <p>
+              Below is an image of the current back end deployment, with major blocks highlighted and labeled. This is provided to help as a general understanding of how the script works and its major components.
+            </p>
+            <img src="public/images/02/07/stack_deployment_script_component_breakdown.jpg" alt="Back end deployment.">
+            <p class="img-caption">
+              Back end deployment.
+            </p>
+          </article>
+          <article class="profileStats card">
+            <h4 class="colorGray42 fw500 ttup">Deploy Back End- Errors and Solutions</h4>
+            <hr>
+            <ol>
+              <li>
+                <h5>Error:</h5>
+                <p>
+                  upload failed: .\{LambdaFolderNameHere}.zip to s3://recursive-thinking-assets-us-west-2-<span style="color:red">{Custom Folder Name Based on Users Github Email Address}/{Dated Folder (Time of Running Script}/{LambdaFolderNameHere}</span>.zip Parameter validation failed:
+                </p>
+                <p>
+                  Invalid bucket name “recursive-thinking-assets-us-west-2-<span style="color:red">{Custom Folder Name Based on Users GitHub Email Addresses}</span>”: Bucket name must match the regex “^[a-zA-Z0-9.\-_]{1, 255}$”
+                </p>
+                <h5>Context:</h5>
+                <p>
+                  No S3 bucket (or folder in a bucket) can have the same name. This is across all buckets in all users S3. deployrtw.py creates a unique bucket name using both the stack name and the email address provided in your Git configuration.
+                </p>
+                <h5>Problem:</h5>
+                <p>
+                  The user running the script either has no email in the Git configuration, or has one that is invalid (fails the regex).
+                </p>
+                <h5>Solution:</h5>
+                <p>
+                  Check to see if a valid email is configured in Git by running this command: 
+                </p>
+                <p>
+                  <span class="codeSnippetGitCommand">git config --global user.email</span>
+                </p>
+                <p>
+                  What should log to the screen is a properly formatted email address, like: 
+                </p>
+                <p>
+                  {yourNameHere}@{anEmailServiceProvider}.com
+                </p>
+                <p>
+                  If you do not see a valid email returned, then please set it by running: 
+                </p>
+                <p>
+                  <span class="codeSnippetGitCommand">git config --global user.email "{yourNameHere}@{anEmailServiceProvider}.com"</span>
+                </p>
+                <p>
+                  Please note that {yourNameHere} and {anEmailServiceProvider} represent unique information that you provide.  Do not enter these as your actual values.
+                </p>
+                <p>
+                  Test this again by running:
+                </p>
+                <p>
+                  <span class="codeSnippetGitCommand">git config --global user.email</span>
+                </p>
+                <p>
+                  At this point, you should have a valid email input.
+                </p>
+                <p>
+                  Re-run the script with the valid email, at which point you should not see this error message. If the message persists, you may have invalid characters in the email string which fails the regex.
+                </p>
+              </li>
+            </ol>
           </article>
         </div>
       </div>
