@@ -34,7 +34,7 @@
             </p>
             <ol>
               <li>
-                <h5>deployrtw.py</h5>
+                <h6>deployrtw.py</h6>
                 <p>
                   deployrtw.py contains several different AWS CLI commands that will execute the configuration options contained inside the template.yml file.
                   <br><br>
@@ -59,11 +59,11 @@
                 </ol>
               </li>
               <li>
-                <h5>template.yml</h5>
+                <h6>template.yml</h6>
                 <p>
                   This file is a CloudFormation (the Amazon Web Service which will build our stack) template containing the configuration options for all services web will use for our site.  These include:
                 </p>
-                <ul class="unorder-list">
+                <ol class="alpha-list">
                   <li>
                     <p>API Gateway</p> 
                   </li>
@@ -79,10 +79,10 @@
                   <li>
                     <p>S3</p>
                   </li>
-                </ul>
+                </ol>
               </li>
               <li>
-                <h5>Supporting files which include:</h5>
+                <h6>Supporting files which include:</h6>
                 <ol class="alpha-list">
                   <li>
                     <p>
@@ -169,6 +169,7 @@
                 <p>
                   Click next to begin a 7 step tutorial on deploying the back end.
                 </p>
+                <br>
               </div>
               <div class="mySlides1">
                 <p>
@@ -287,22 +288,22 @@
             <hr>
             <ol>
               <li>
-                <h5>Error:</h5>
+                <h6>Error:</h6>
                 <p>
                   upload failed: .\{LambdaFolderNameHere}.zip to s3://recursive-thinking-assets-us-west-2-<span style="color:red">{Custom Folder Name Based on Users Github Email Address}/{Dated Folder (Time of Running Script}/{LambdaFolderNameHere}</span>.zip Parameter validation failed:
                 </p>
                 <p>
                   Invalid bucket name “recursive-thinking-assets-us-west-2-<span style="color:red">{Custom Folder Name Based on Users GitHub Email Addresses}</span>”: Bucket name must match the regex “^[a-zA-Z0-9.\-_]{1, 255}$”
                 </p>
-                <h5>Context:</h5>
+                <h6>Context:</h6>
                 <p>
                   No S3 bucket (or folder in a bucket) can have the same name. This is across all buckets in all users S3. deployrtw.py creates a unique bucket name using both the stack name and the email address provided in your Git configuration.
                 </p>
-                <h5>Problem:</h5>
+                <h6>Problem:</h6>
                 <p>
                   The user running the script either has no email in the Git configuration, or has one that is invalid (fails the regex).
                 </p>
-                <h5>Solution:</h5>
+                <h6>Solution:</h6>
                 <p>
                   Check to see if a valid email is configured in Git by running this command: 
                 </p>

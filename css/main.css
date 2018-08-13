@@ -155,7 +155,7 @@ h5 {
     text-decoration-line: none;
 }
 
-.cell > .card > ul > h6 {
+.cell > .card > ul > h6, h6 {
     font-size: 1.5rem;
     letter-spacing: .75px;
     margin-top: 1rem;
@@ -193,10 +193,15 @@ img {
     color: #424041;
 }
 
-.alpha-list, .unorder-list {
+.alpha-list, .unorder-list, .roman-list {
     margin-left: 5%;
     margin-top: 1%;
-    font-size: 3.4rem;
+    /* font-size: 1.4rem;
+    letter-spacing: 1.1px; */
+}
+
+.alpha-list li, .unorder-list li, .roman-list li {
+    font-size: 1.4rem;
     letter-spacing: 1.1px;
 }
 
@@ -206,7 +211,6 @@ img {
 
 .roman-list {
     list-style-type: lower-roman;
-    margin-left: 5%;
 }
 
 /* Slideshow */
