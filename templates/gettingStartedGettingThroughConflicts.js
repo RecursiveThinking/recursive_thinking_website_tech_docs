@@ -44,7 +44,4 @@ function showSlides(n) {
 function plusSlides(n) {
     document.getElementById('tutorial').scrollIntoView();
     showSlides(slideIndex += n);
-
-
-
 }
