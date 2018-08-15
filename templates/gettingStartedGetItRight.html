@@ -31,7 +31,11 @@
 
                         <ol>
                             <li>
-                                Make sure that the terminal is in the correct project directory, and that project directory is a valid repository.  This can be done by running a <span class="codeSnippetGitCommand">git status</span> command.  There are two possible outcomes:
+                                 
+                                <p>Make sure that the terminal is in the correct project directory, and that project directory is a valid repository.  This can be done by running:</p> 
+                                <p><span class="codeSnippetGitCommand">git status</span></p>
+                                <p>There are two possible outcomes:</p>
+                                
                             </li>
                             <ol class="alpha-list">
                                 <li>
@@ -66,7 +70,13 @@
                                     <ol class="roman-list">
                                         <li>
                                             <p>
-                                                First, run the command <span class="codeSnippetGitCommand">git status</span> to make sure that you are on the master branch, which reflects the production-ready state. This will also allow you to see what files have not yet been added, as they will appear in red. Added files will appear in green. 
+                                                First, run the command:
+                                            </p> 
+                                            <p>
+                                                <span class="codeSnippetGitCommand">git status</span> 
+                                            </p>
+                                            <p>
+                                                This is to make sure that you are on the master branch, which reflects the production-ready state. This will also allow you to see what files have not yet been added, as they will appear in red. Added files will appear in green. 
                                             </p>
                                         </li>
                                         <img src="public/images/contributing/committing1.jpg" alt="The untracked files are displayed in red.">
@@ -75,7 +85,7 @@
                                         </p>
                                         <li>
                                             <p>
-                                                To add files, run the command: 
+                                                To add files, run: 
                                             </p>
                                             <p><span class="codeSnippetGitCommand">git add <filename></span></p>    
                                             <p>For example, if you created or edited a file named “readMe1,” you would add the file by running the command:</p>
@@ -87,8 +97,9 @@
                                                 Add each file (readMe1, readMe2 and readMe3).
                                             </p>
                                             <p>
-                                                Once added, they will appear green when you run the <span class="codeSnippetGitCommand">git status</span> command. 
+                                                Once added, they will appear green when you run: 
                                             </p>
+                                            <p><span class="codeSnippetGitCommand">git status</span></p>
                                             <img src="public/images/contributing/committing3.jpg" alt="Now that the files have been added, they will appear in green when you check their status.">
                                             <p class="img-caption">
                                                 Now that the files have been added, they will appear in green when you check their status.
@@ -98,11 +109,21 @@
                                 </li>
                                 <li>
                                     <p>
-                                        When you are ready to commit your changes, you can run the commit command, which includes a mandatory message detailing what action you have taken. Do this by running
-                                        <span class="codeSnippetGitCommand">git commit -m “”</span> in your terminal. (Inside of the quotation marks, you will type your message details.)    
+                                        When you are ready to commit your changes, you can run the commit command, which includes a mandatory message detailing what action you have taken. Do this by running:
+                                          
+                                    </p>
+                                    <p><span class="codeSnippetGitCommand">git commit -m “”</span></p>
+                                    <p>
+                                        Inside of the quotation marks, you will type your message details. 
                                     </p>
                                     <p>
-                                        For example, once you are ready to commit readMe1.md, you would run <span class="codeSnippetGitCommand">git commit -m “now I have pushed the files where we have resolved conflicts”</span> in your terminal, or whatever message you choose.
+                                        For example, once you are ready to commit readMe1.md, you would run:
+                                    </p>
+                                    <p>
+                                        <span class="codeSnippetGitCommand">git commit -m “now I have pushed the files where we have resolved conflicts”</span>
+                                    </p>
+                                    <p>
+                                        You may choose whatever message makes the most sense for your commit.
                                     </p>
                                     <img src="public/images/contributing/committing4.jpg" alt="The files have been committed and include a message detailing the action taken.">
                                     <p class="img-caption">
@@ -118,7 +139,10 @@
                             <ol class="alpha-list">
                                 <li>
                                     <p>
-                                        To make the final step in pushing your changes to Git, where they will show up in your commit history and in the project directory on GitHub, run the<span class="codeSnippetGitCommand">git push origin master</span> command in your terminal.
+                                        To make the final step in pushing your changes to Git, where they will show up in your commit history and in the project directory on GitHub, run:
+                                    </p>
+                                    <p>
+                                        <span class="codeSnippetGitCommand">git push origin master</span>
                                     </p>
                                     <img src="public/images/contributing/committing5.jpg" alt="The files have been pushed to master.">
                                     <p class="img-caption">

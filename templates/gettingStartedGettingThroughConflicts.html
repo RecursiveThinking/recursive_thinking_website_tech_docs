@@ -46,7 +46,10 @@
             </p>
             <p>
               When the user runs
-              <span class="codeSnippetGitCommand">git push origin master</span>, they encounter an error because of a merge conflict.
+              the following command, they encounter an error because of a merge conflict
+            </p>
+            <p>
+              <span class="codeSnippetGitCommand">git push origin master</span>
             </p>
             <img src="public/images/merge-conflict/merge2.jpg" alt="The user encounters a merge conflict, noted by the “! [rejected]” message.">
             <p class="img-caption">
@@ -78,10 +81,10 @@
                     In order to resolve this conflict, run the following commands:
                   </p>
                   <p>
-                    1. Run
-                    <span class="codeSnippetGitCommand">git fetch --all</span> to download all commits from the remote repository (GitHub) that your local computer
-                    does not have.
+                    To download all commits from the remote repository (GitHub) that your local computer
+                    does not have, run:
                   </p>
+                  <p><span class="codeSnippetGitCommand">git fetch --all</span></p>
                   <img src="public/images/merge-conflict/merge3.jpg" alt="The user should see “Fetching origin” after running the command.">
                   <p class="img-caption">
                     The user should see “Fetching origin” after running the command.
@@ -92,8 +95,11 @@
                 <div class="mySlides">
                   <p>
                     2. Now you will need to rebase your local computer to master. This command allows you to walk through all changes (Person
-                    A’s and Person B’s) and let you decide which to keep. Run
-                    <span class="codeSnippetGitCommand">git rebase origin/master</span> to do this.
+                    A’s and Person B’s) and let you decide which to keep. To do this, run:
+                    
+                  </p>
+                  <p>
+                    <span class="codeSnippetGitCommand">git rebase origin/master</span>
                   </p>
                   <img src="public/images/merge-conflict/merge4.jpg" alt="After running this rebase command, you will see everyone’s changes made to each respective file.">
                   <p class="img-caption">
@@ -186,8 +192,11 @@
 
                 <div class="mySlides">
                   <p>
-                    4. Run
-                    <span class="codeSnippetGitCommand">git rebase --continue</span> to apply your commits. You will first need to add your files.
+                    4.
+                    To apply your commits. You will first need to add your files. Begin this by running:
+                  </p>
+                  <p>
+                    <span class="codeSnippetGitCommand">git rebase --continue</span>
                   </p>
                   <img src="public/images/merge-conflict/merge13.jpg" alt="The user is shown a message instructing them to add the files.">
                   <p class="img-caption">
@@ -198,8 +207,11 @@
 
                 <div class="mySlides">
                   <p>
-                    5. Run
-                    <span class="codeSnippetGitCommand">git status</span> to see what file changes are untracked.
+                    5. To see what file changes are untracked, run:
+                  </p>
+                  <p>
+                    Run
+                    <span class="codeSnippetGitCommand">git status</span>
                   </p>
                   <img src="public/images/merge-conflict/merge14.jpg" alt="Untracked files are noted in red.">
                   <p class="img-caption">
@@ -210,10 +222,12 @@
 
                 <div class="mySlides">
                   <p>
-                    6. Run
+                    6. For each file, run:
+                  </p>
+                  <p>
                     <span class="codeSnippetGitCommand">git add
                       <filename>
-                    </span> for each file.
+                    </span>
                   </p>
                   <img src="public/images/merge-conflict/merge15.jpg" alt="You can add each file individually, or you can add all files using the git add . command.">
                   <p class="img-caption">
@@ -242,8 +256,11 @@
 
                 <div class="mySlides">
                   <p>
-                    7. Continue the rebase by running
-                    <span class="codeSnippetGitCommand">git rebase --continue</span> in order to apply your commits.
+                    7. Continue the rebase
+                    in order to apply your commits but running:
+                  </p>
+                  <p>
+                    <span class="codeSnippetGitCommand">git rebase --continue</span>
                   </p>
                   <img src="public/images/merge-conflict/merge19.jpg" alt="The original commit is being pushed, noted with the user’s original message “this commit will error when pushed - as the
                   head is one commit farther than this local.”">
