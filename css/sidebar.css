@@ -92,7 +92,7 @@
 }  */
 
 .tab-focus {
-    color: rgb(70, 233, 255);
+    color: #00b371;
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px){

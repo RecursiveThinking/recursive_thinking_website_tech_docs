@@ -18,6 +18,7 @@ body {
     margin: 0 auto;
 }
 
+
 #mainWindow{
     margin-top: 70px;
     margin-left: 20%;
@@ -193,12 +194,28 @@ img {
     color: #424041;
 }
 
+/* Links */
+
+
+a {
+    color: #00b371;
+    /* #00b371 lighter green; darker green 006842*/
+}
+a:hover,
+a:active {
+    color: #006842;
+}
+
 .getStartedLink {
     /* font-size: 1.75rem;
     letter-spacing: 1px;
     margin-top: 1.25rem; */
-    color: #006842;
+    color: #00b371;
     text-decoration: none;
+}
+
+.linkText:hover {
+    color: #006842;
 }
 
 .linkText {

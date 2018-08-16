@@ -109,12 +109,12 @@
             <h4 class="colorGray42 fw500 ttup">CloudFormation Configuration</h4>
             <hr>
             <div class="slideshow-container">
-              <div class="mySlides">
+              <div class="mySlides1">
                 <p>
                   Click "Next" to begin a 4-step tutorial to help configure CloudFormation in AWS services. This will help you determine if your stack has been built yet.
                 </p>
               </div>
-              <div class="mySlides">
+              <div class="mySlides1">
                 <p>
                   1. Log in to your AWS account, and select “CloudFormation” from the list of AWS services.  
                 </p>
@@ -124,7 +124,7 @@
                   CloudFormation in the list of AWS services.
                 </p>
               </div>
-              <div class="mySlides">
+              <div class="mySlides1">
                 <p>
                   2. If CloudFormation is not easily visible, just type it into the search bar.
                 </p>
@@ -135,7 +135,7 @@
                   CloudFormation appears in the dropdown.
                 </p>
               </div>
-              <div class="mySlides">
+              <div class="mySlides1">
                 <p>
                   3. Once in CloudFormation, you will see a list of available stacks. In this case, however, there will be no stacks, because we have not deployed yet.   
                 </p>
@@ -145,7 +145,7 @@
                   No stacks will appear at this time.
                 </p>
               </div>
-              <div class="mySlides">
+              <div class="mySlides1">
                 <p>
                   4. At the end of these instructions, expect to see "recursive-thinking-server" as a row on the page. If you see that, you were successful.
                 </p>
@@ -156,9 +156,9 @@
                 </p>
               </div>
               <div id="tutorial2" class="nextPrev">
-                <button type="button" class="prevBtn" onclick="plusSlides(-1)">
+                <button type="button" class="prevBtn" onclick="plusSlides1(-1)">
                   < Previous</button>
-                <button type="button" class="nextBtn" onclick="plusSlides(1)">Next ></button>
+                <button type="button" class="nextBtn" onclick="plusSlides1(1)">Next ></button>
               </div>
             </div>
             <br>
@@ -167,13 +167,13 @@
             <h4 class="colorGray42 fw500 ttup">Deployment Process</h4>
             <hr>
             <div class="slideshow-container">
-              <div class="mySlides1">
+              <div class="mySlides2">
                 <p>
                   Click "Next" to begin a 7-step tutorial on deploying the back end. The tutorial will walk you through running the Python script to build the back end and error troubleshooting.
                 </p>
                 <br>
               </div>
-              <div class="mySlides1">
+              <div class="mySlides2">
                 <p>
                   1. Make sure that you are inside recursive_thinking_server in your terminal/CLI. 
                 </p>
@@ -183,7 +183,7 @@
                   In recursive_thinking_server.
                 </p>
               </div>
-              <div class="mySlides1">
+              <div class="mySlides2">
                 <p>
                   2. Run the command:
                 </p>
@@ -196,7 +196,7 @@
                   Run: <span class="codeSnippetGitCommand">./deployrtw.py</span>
                 </p>
               </div>
-              <div class="mySlides1">
+              <div class="mySlides2">
                 <p>
                   3. Watch the CLI/terminal output.  Make sure that all the commands in the script execute successfully and do not error. 
                 </p>
@@ -206,7 +206,7 @@
                   Successful command execution.
                 </p>
               </div>
-              <div class="mySlides1">
+              <div class="mySlides2">
                 <p>
                   4. When all the commands execute successfully, log in to your AWS account again and select CloudFormation.  “recursive-thinking-server” should now be an available stack. Make sure the message reads “CREATE_COMPLETE,” and is green.  A different message, especially one in red, generally indicates an error. Continue the tutorial if the stack is not displaying correctly.
                 </p>
@@ -216,7 +216,7 @@
                   Recursive-thinking-server is now a stack.
                 </p>
               </div>
-              <div class="mySlides1">
+              <div class="mySlides2">
                 <h5>
                   Stack Creation Errors
                 </h5>
@@ -229,7 +229,7 @@
                   The recursive-thinking-server stack does not appear.
                 </p>
               </div>
-              <div class="mySlides1">
+              <div class="mySlides2">
                 <p>
                   AWS has many regions (at the time of writing there are 15 regions worldwide). For the back end stack, it is possible to have the same stack in multiple locations, as the stack has a region identifier in its stack ID.  (This can be seen by clicking the checkbox for a stack, and looking for the stack ID in the Overview tab)
                 </p>
@@ -248,7 +248,7 @@
                   A list of all AWS regions.
                 </p>
               </div>
-              <div class="mySlides1">
+              <div class="mySlides2">
                 <p>
                   In this dropdown, select the region that corresponds to your .config file setting.  In this case, the user would select “US West (Oregon)” as this option is us-west-2, which is the region specified in this user’s .config file.
                 </p>
@@ -263,9 +263,9 @@
                 </p>
               </div>
               <div class="nextPrev">
-                <button type="button" class="prevBtn" onclick="plusSlides1(-1)">
+                <button type="button" class="prevBtn" onclick="plusSlides2(-1)">
                   < Previous</button>
-                <button type="button" class="nextBtn" onclick="plusSlides1(1)">Next ></button>
+                <button type="button" class="nextBtn" onclick="plusSlides2(1)">Next ></button>
               </div>
             </div>
             <br>
