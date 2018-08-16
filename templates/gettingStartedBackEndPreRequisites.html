@@ -28,13 +28,13 @@
             <h4 class="colorGray42 fw500 ttup">Back End PreRequisites</h4>
             <hr>
             <p>
-              The following are the prerequisites for the Recursive Thinking back end:
+              The following are the prerequisites for the Recursive Thinking website.
             </p>
             <h6>
-              Python <a href="https://www.python.org/" target="/">https://www.python.org</a>
+              Install Python 
             </h6>
             <p>
-              Our deployment script (deployrtw.py), which runs the Amazon Web Services Command Line Interface (AWS CLI) and processes the template.yml file into different Amazon Web Services, runs on Python.
+              Select the version for your OS at <a href="https://www.python.org/" target="/"><span class="linkFormatting">https://www.python.org</span> </a>. Our deployment script (deployrtw.py), which runs the Amazon Web Services Command Line Interface (AWS CLI) and processes the template.yml file into different Amazon Web Services, runs on Python.
             </p>
             <p>
               A quick way to test if you have Python installed is to run the following command in the CLI/terminal:
@@ -46,17 +46,17 @@
               If you don't see "Python X.X.X" (where the X's are version/release numbers), then you don't have Python installed. If this is the case, click on the link above to go to the Python Software Foundation's website and download a copy for your version of OS.
             </p>
             <p>
-              *Note: Currently, some of the code in deployrtw.py requires modules only available in Python 3 so please download a Python 3 version to prevent errors in running the script.
+              *Note: Currently, some of the code in deployrtw.py requires modules only available in Python 3, so please download a Python 3 version to prevent errors in running the script.
             </p>
             <h6>
               Install AWS CLI
             </h6>
             <p>
-              Select the version for your OS at <a href="https://docs.aws.amazon.com/cli/latest/userguide/installing.html" target="/"><span class="linkFormatting">(https://docs.aws.amazon.com/cli/latest/userguide/installing.html)</span></a>. The deployment script executes AWS CLI commands in order to build the back end stack of component services.
+              Select the version for your OS at <a href="https://docs.aws.amazon.com/cli/latest/userguide/installing.html" target="/"><span class="linkFormatting">https://docs.aws.amazon.com/cli/latest/userguide/installing.html</span></a>. The deployment script executes AWS CLI commands in order to build the back end stack of component services.
             </p>
             
             <p>
-              A quick way to test if you have AWS CLI installed is to run the following command in the CLI/terminal.
+              A quick way to test if you have AWS CLI installed is to run the following command in the CLI/terminal:
             </p>
             <p>
               <span class="codeSnippetGitCommand">aws --version</span>
@@ -69,17 +69,14 @@
               Create an AWS Account
             </h6>
             <p>
-              Create your account at <a href="https://aws.amazon.com/free/" target="/"><span class="linkFormatting">(https://aws.amazon.com/free)</span></a>.
-            </p>
-            <p>
-              You will use AWS to create your own back end for the website.
+              Create your account at <a href="https://aws.amazon.com/free/" target="/"><span class="linkFormatting">https://aws.amazon.com/free</span></a>. You will use AWS to create your own back end for the website.
             </p>
             <h6>
               Configure AWS CLI
             </h6>
             
             <p>
-              Once you install AWS CLI, you will need to configure it so that it points to your AWS account. Find the instructions to do this at <a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html" target="/"><span class="linkFormatting">(https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)</span></a>.
+              Once you install AWS CLI, you will need to configure it so that it points to your AWS account. Find the instructions to do this at <a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html" target="/"><span class="linkFormatting">https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html</span></a>.
             </p>
             <p>
               Please note that there has been some confusion with the instructions regarding Identity and Access Management (IAM) user names. This is addressed in the section "To get the access key ID and secret access key for an IAM user" under step 3 ("Choose your IAM user name"). To cover creating an IAM resource and setting permissions more thoroughly, you will find a step-by-step guide below.
@@ -126,7 +123,7 @@
                   If you do not see a valid email returned, then set it running:
                 </p>
                 <p>
-                  <span class="codeSnippetGitCommand">git config --global user.email "{yourNameHere}{anEmailServiceProvider}.com"</span>.
+                  <span class="codeSnippetGitCommand">git config --global user.email "{yourNameHere}{anEmailServiceProvider}.com"</span>
                 </p>
                 <p>
                   Please note that {yourNameHere} and {anEmailServiceProvider} represent unique information that you provide (braces not included).
@@ -150,37 +147,37 @@
             <hr>
             <ul>
               <li>
-                <p>1. Open the IAM console</p>
-                <p>Select users from left menu</p>
-                <p>Click the "Add user" button</p>
+                <p>1. Open the IAM console.</p>
+                <p>Select users from left menu.</p>
+                <p>Click the "Add user" button.</p>
                 <br>
                 <img src="./public/images/02/06/IAM/creating_IAM_user_00_Add_User.jpg" alt="">
               </li>
               <li>
                 <p>2. Fill in your desired name.</p>
                 <p>Select "Programatic access" checkbox.</p>
-                <p>Click "Next: Permissions".</p>
+                <p>Click "Next: Permissions."</p>
                 <br>
                 <img src="./public/images/02/06/IAM/creating_IAM_user_01_Name_and_Type.jpg" alt="">
               </li>
               <li>
-                <p>3a. Select the "Attach existing policies directly" button</p>
-                <p>In the policy table, click the "AdministratorAccess" checkbox</p>
+                <p>3a. Select the "Attach existing policies directly" div (an HTML element).</p>
+                <p>In the policy table, click the "AdministratorAccess" checkbox.</p>
                 <br>
                 <img src="./public/images/02/06/IAM/creating_IAM_user_02_01_Permissions.jpg" alt="">
-                <p>3b. Under "Set permissions boundary", select "Create user without a permissions boundary"</p>
-                <p>Click "Next: Review.</p>
+                <p>3b. Under "Set permissions boundary", select "Create user without a permissions boundary."</p>
+                <p>Click "Next: Review."</p>
                 <br>
                 <img src="./public/images/02/06/IAM/creating_IAM_user_02_02_Permissions.jpg" alt="">
               </li>
               <li>
                 <p>4. Make sure configuration matches the image below.</p>
-                <p>If so, select "Create user".</p>
+                <p>If so, select "Create user."</p>
                 <br>
                 <img src="./public/images/02/06/IAM/creating_IAM_user_03_Review.jpg" alt="">
               </li>
               <li>
-                <p>5. If user creation is successful - you will see the following page.</p>
+                <p>5. If user creation is successful, you will see the following page.</p>
                 <p>*IMPORTANT NOTE: This is the only place where you can copy your AWS secret access key!</p>
                 <p>Copy your access key (see note above), or download the .csv file (which contains both codes) for future use.</p>
                 <br>

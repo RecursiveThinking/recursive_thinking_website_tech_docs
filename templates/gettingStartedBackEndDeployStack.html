@@ -62,7 +62,7 @@
               <li>
                 <h6>template.yml</h6>
                 <p>
-                  This file is a CloudFormation (the Amazon Web Service which will build our stack) template containing the configuration options for all services web will use for our site.  These include:
+                  This file is a CloudFormation (the Amazon Web Service which will build our stack) template containing the configuration options for all services we will use for our site.  These include:
                 </p>
                 <ol class="alpha-list">
                   <li>
@@ -87,7 +87,7 @@
                 <ol class="alpha-list">
                   <li>
                     <p>
-                      lambdas
+                      Lambdas
                     </p>
                   </li>
                   <li>
@@ -111,17 +111,17 @@
             <div class="slideshow-container">
               <div class="mySlides">
                 <p>
-                  Click next to begin a 4 step tutorial to help configure CloudFormation in AWS services. This will help you determine if your stack has been built yet.
+                  Click "Next" to begin a 4-step tutorial to help configure CloudFormation in AWS services. This will help you determine if your stack has been built yet.
                 </p>
               </div>
               <div class="mySlides">
                 <p>
-                  1. Log in into your AWS account, and select “CloudFormation” from the list of AWS services.  
+                  1. Log in to your AWS account, and select “CloudFormation” from the list of AWS services.  
                 </p>
                 <br>
-                <img src="public/images/02/07/stack_deployment_01a_CloudFormation.jpg" alt="caption needed">
+                <img src="public/images/02/07/stack_deployment_01a_CloudFormation.jpg" alt="CloudFormation in the list of AWS services.">
                 <p class="img-caption">
-                  CloudFormation caption needed
+                  CloudFormation in the list of AWS services.
                 </p>
               </div>
               <div class="mySlides">
@@ -129,9 +129,10 @@
                   2. If CloudFormation is not easily visible, just type it into the search bar.
                 </p>
                 <br>
-                <img src="public/images/02/07/stack_deployment_01b_CloudFormation_Search.jpg" alt="caption needed">
+                <img src="public/images/02/07/stack_deployment_01b_CloudFormation_Search.jpg" alt="CloudFormation appears in the dropdown.
+                ">
                 <p class="img-caption">
-                  CloudFormation caption needed
+                  CloudFormation appears in the dropdown.
                 </p>
               </div>
               <div class="mySlides">
@@ -139,9 +140,9 @@
                   3. Once in CloudFormation, you will see a list of available stacks. In this case, however, there will be no stacks, because we have not deployed yet.   
                 </p>
                 <br>
-                <img src="public/images/02/07/stack_deployment_02_CloudFormation_Stacks.jpg" alt="caption needed">
+                <img src="public/images/02/07/stack_deployment_02_CloudFormation_Stacks.jpg" alt="No stacks will appear at this time.">
                 <p class="img-caption">
-                  CloudFormation caption needed
+                  No stacks will appear at this time.
                 </p>
               </div>
               <div class="mySlides">
@@ -168,7 +169,7 @@
             <div class="slideshow-container">
               <div class="mySlides1">
                 <p>
-                  Click next to begin a 7 step tutorial on deploying the back end. The tutorial will walk you through running the Python script to build the back end and error troubleshooting.
+                  Click "Next" to begin a 7-step tutorial on deploying the back end. The tutorial will walk you through running the Python script to build the back end and error troubleshooting.
                 </p>
                 <br>
               </div>
@@ -190,12 +191,9 @@
                   <span class="codeSnippetGitCommand">./deployrtw.py</span>  
                 </p>
                 <br>
-                <img src="public/images/02/07/stack_deployment_04_deployrtw_py.jpg" alt="Running the ./deployrtw.py command.">
+                <img src="public/images/02/07/stack_deployment_04_deployrtw_py.jpg" alt="Run: ./deployrtw.py">
                 <p class="img-caption">
-                  Run: 
-                </p>
-                <p>
-                  <span class="codeSnippetGitCommand">./deployrtw.py</span>
+                  Run: <span class="codeSnippetGitCommand">./deployrtw.py</span>
                 </p>
               </div>
               <div class="mySlides1">
@@ -210,7 +208,7 @@
               </div>
               <div class="mySlides1">
                 <p>
-                  4. When all the commands execute successfully, log in to your AWS account again and select CloudFormation.  “recursive-thinking-server” should now be an available stack. Make sure the message reads “CREATE_COMPLETE”, and is green.  A different message, especially one in red, generally indicates an error. Continue the tutorial if the stack is not displaying correctly.
+                  4. When all the commands execute successfully, log in to your AWS account again and select CloudFormation.  “recursive-thinking-server” should now be an available stack. Make sure the message reads “CREATE_COMPLETE,” and is green.  A different message, especially one in red, generally indicates an error. Continue the tutorial if the stack is not displaying correctly.
                 </p>
                 <br>
                 <img src="public/images/02/07/stack_deployment_06_CloudFormation_Stacks_Success.jpg" alt="Recursive-thinking-server is now a stack.">
@@ -220,10 +218,10 @@
               </div>
               <div class="mySlides1">
                 <h5>
-                  Creation Errors
+                  Stack Creation Errors
                 </h5>
                 <p>
-                  You may go through the entire setup process above, run the script, receive a message that says “Successfully created/updated stack - recursive-thinking-server” in your terminal but when you go to the AWS CloudFormation console, the stack does not appear. Read below to successfully find the stack.
+                  You may go through the entire setup process above, run the script, receive a message that says “Successfully created/updated stack - recursive-thinking-server” in your terminal, but when you go to the AWS CloudFormation console, the stack does not appear. Read below to successfully find the stack.
                 </p>
                 <br>
                 <img src="public/images/02/07/where_is_my_stack_00_no_stack.jpg" alt="The recursive-thinking-server stack does not appear.">
