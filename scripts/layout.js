@@ -24,39 +24,14 @@ class api {
 const recursiveApi = new api();
 recursiveApi.init();
 
-// Try replacing with querySelectorAll()
 
-// Highlighting happens in redirect.js now through sideHighlight(). To reenable, add onclick="tabFocus(this)"  to each article in the layout.html sidebar area.
-// Adds blue to visited parent category
-// function tabFocus(element){
-//     Array.from(document.getElementsByClassName("sidebarTitle")).forEach(function(item){
-//         item.classList.remove("tab-focus");
-//         element.children[1].classList.add("tab-focus");
-//     });
-// }
-// highlights current tab on sidebar if you click through a parent link
+// collapsible sidebar
+let icon = document.getElementById("start");
+icon.addEventListener("click", collapse);
 
-// !!!!If you want to re-add collapsible sidebar, add the classes back to the child articles in layout (start child, start hide, back hide) as well as the on-click functions
-// function showStart(){
-//     // toggles display property for sub headings on nav bar
-//     Array.from(document.getElementsByClassName("start-child")).forEach(function(item){
-//         item.classList.toggle("start-hide");
-//     });
-//     // toggles icon
-//     var startPlus = document.getElementById('start');
-//     startPlus.classList.toggle("fa-minus-square");
-// }
-
-// function showFront(){
-//     var item1 = document.getElementById('btnSidebarFrontEndTemplater');
-//     item1.classList.toggle("front-hide");
-//     var item2 = document.getElementById('front');
-//     item2.classList.toggle("fa-minus-square");
-// }
-
-// function showBack(){
-//     var item1 = document.getElementById('btnSidebarBackEndYamlConfiguration');
-//     item1.classList.toggle("back-hide");
-//     var item2 = document.getElementById('back');
-//     item2.classList.toggle("fa-minus-square");
-// }
+function collapse(){
+    let children = document.querySelectorAll(".hiddenChild");
+    for (let i=0; i<children.length; i++) {
+        children[i].classList.toggle("hidden");
+    }
+}

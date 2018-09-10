@@ -29,7 +29,7 @@
             <hr>
             <p>
               Please make sure that all the prerequisites are properly installed and configured.  If there is any doubt, please review the previous tab, <a href="#gettingStartedBackEndPreRequisites"><span
-                class="linkFormatting">Back End Prerequisites</span></a> .
+                class="linkFormatting">Back End Prerequisites</span></a>.
               <br><br>
               There are three major components to the back end AWS stack deployment.
             </p>
@@ -49,7 +49,7 @@
                   </li>
                   <li>
                     <p>
-                      Exports a .json file of credentials for cognito and S3, both of which are used to connect our front end and back end components.
+                      Exports a .json file of credentials for Cognito and S3, both of which are used to connect our front end and back end components.
                     </p>
                   </li>
                   <li>
@@ -72,7 +72,7 @@
                     <p>Lambda</p>
                   </li>
                   <li>
-                    <p>Dynamo DB</p>
+                    <p>DynamoDB</p>
                   </li>
                   <li>
                     <p>Cognito</p>
@@ -169,7 +169,7 @@
             <div class="slideshow-container">
               <div class="mySlides2">
                 <p>
-                  Click "Next" to begin a 7-step tutorial on deploying the back end. The tutorial will walk you through running the Python script to build the back end and error troubleshooting.
+                  Click "Next" to begin a 4-step tutorial on deploying the back end. The tutorial will walk you through running the Python script to build the back end and error troubleshooting.
                 </p>
                 <br>
               </div>
@@ -231,7 +231,7 @@
               </div>
               <div class="mySlides2">
                 <p>
-                  AWS has many regions (at the time of writing there are 15 regions worldwide). For the back end stack, it is possible to have the same stack in multiple locations, as the stack has a region identifier in its stack ID.  (This can be seen by clicking the checkbox for a stack, and looking for the stack ID in the Overview tab)
+                  AWS has many regions (at the time of writing there are 15 regions worldwide). For the back end stack, it is possible to have the same stack in multiple locations, as the stack has a region identifier in its stack ID.  (This can be seen by clicking the checkbox for a stack, and looking for the stack ID in the Overview tab.)
                 </p>
                 <p>
                   The AWS region where the stack gets published to is held in the .config file created during the AWS CLI configuration steps. If the current AWS CLI profile is set to a default region of us-west-2, then the stack is going to be in the CloudFormation console for just that AWS region.
@@ -240,7 +240,7 @@
                   The problem here is that when you first create an AWS account, it always defaults to AWS region us-east-1.
                 </p>
                 <p>
-                  To fix this, if you know your stack was created successfully, and you know what AWS region is specified in your .config file, go the CloudFormation console, and click on the dropdown menu button that is second from the right. Clicking this button will reveal a drop down of all AWS regions.
+                  To fix this, if you know your stack was created successfully, and you know what AWS region is specified in your .config file, go the CloudFormation console, and click on the dropdown menu button that is second from the right. Clicking this button will reveal a dropdown of all AWS regions.
                 </p>
                 <br>
                 <img src="public/images/02/07/where_is_my_stack_01_aws_stack_regions.jpg" alt="A list of all AWS regions.">
@@ -253,7 +253,8 @@
                   In this dropdown, select the region that corresponds to your .config file setting.  In this case, the user would select “US West (Oregon)” as this option is us-west-2, which is the region specified in this user’s .config file.
                 </p>
                 <p>
-                  For more information on region name to region code translation, read <a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html">this guide</a>
+                  For more information on region name to region code translation, read <a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html" target="_blank"><span
+                    class="linkFormatting">this guide</span></a>.
                 </p>
                 <br>
                 <img 
@@ -295,7 +296,7 @@
               <li>
                 <h6>Error:</h6>
                 <p>
-                  upload failed: .\{LambdaFolderNameHere}.zip to s3://recursive-thinking-assets-us-west-2-<span style="color:red">{Custom Folder Name Based on Users Github Email Address}/{Dated Folder (Time of Running Script}/{LambdaFolderNameHere}</span>.zip Parameter validation failed:
+                  upload failed: .\{LambdaFolderNameHere}.zip to s3://recursive-thinking-assets-us-west-2-<span style="color:red">{Custom Folder Name Based on Users GitHub Email Address}/{Dated Folder (Time of Running Script}/{LambdaFolderNameHere}</span>.zip Parameter validation failed:
                 </p>
                 <p>
                   Invalid bucket name “recursive-thinking-assets-us-west-2-<span style="color:red">{Custom Folder Name Based on Users GitHub Email Addresses}</span>”: Bucket name must match the regex “^[a-zA-Z0-9.\-_]{1, 255}$”

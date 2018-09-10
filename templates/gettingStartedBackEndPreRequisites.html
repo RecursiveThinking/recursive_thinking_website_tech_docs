@@ -28,13 +28,13 @@
             <h4 class="colorGray42 fw500 ttup">Back End PreRequisites</h4>
             <hr>
             <p>
-              The following are the prerequisites for the Recursive Thinking website.
+              The following are the back end prerequisites for the Recursive Thinking website.
             </p>
             <h6>
               Install Python 
             </h6>
             <p>
-              Select the version for your OS at <a href="https://www.python.org/" target="/"><span class="linkFormatting">https://www.python.org</span> </a>. Our deployment script (deployrtw.py), which runs the Amazon Web Services Command Line Interface (AWS CLI) and processes the template.yml file into different Amazon Web Services, runs on Python.
+              Select the version for your OS at <a href="https://www.python.org/" target="/"><span class="linkFormatting">https://www.python.org</span></a>. Our deployment script (deployrtw.py), which runs the Amazon Web Services Command Line Interface (AWS CLI) and processes the template.yml file into different Amazon Web Services, runs on Python.
             </p>
             <p>
               A quick way to test if you have Python installed is to run the following command in the CLI/terminal:
@@ -43,7 +43,7 @@
               <span class="codeSnippetGitCommand">python --version</span> 
             </p>
             <p>
-              If you don't see "Python X.X.X" (where the X's are version/release numbers), then you don't have Python installed. If this is the case, click on the link above to go to the Python Software Foundation's website and download a copy for your version of OS.
+              If you do not see "Python X.X.X" (where the X's are version/release numbers), then you do not have Python installed. If this is the case, click on the link above to go to the Python Software Foundation's website and download a copy for your version of OS.
             </p>
             <p>
               *Note: Currently, some of the code in deployrtw.py requires modules only available in Python 3, so please download a Python 3 version to prevent errors in running the script.
@@ -123,7 +123,7 @@
                   If you do not see a valid email returned, then set it running:
                 </p>
                 <p>
-                  <span class="codeSnippetGitCommand">git config --global user.email "{yourNameHere}{anEmailServiceProvider}.com"</span>
+                  <span class="codeSnippetGitCommand">git config --global user.email "{yourNameHere}@{anEmailServiceProvider}.com"</span>
                 </p>
                 <p>
                   Please note that {yourNameHere} and {anEmailServiceProvider} represent unique information that you provide (braces not included).
@@ -148,7 +148,7 @@
             <ul>
               <li>
                 <p>1. Open the IAM console.</p>
-                <p>Select users from left menu.</p>
+                <p>Select "Users" from left menu.</p>
                 <p>Click the "Add user" button.</p>
                 <br>
                 <img src="./public/images/02/06/IAM/creating_IAM_user_00_Add_User.jpg" alt="">
@@ -165,7 +165,7 @@
                 <p>In the policy table, click the "AdministratorAccess" checkbox.</p>
                 <br>
                 <img src="./public/images/02/06/IAM/creating_IAM_user_02_01_Permissions.jpg" alt="">
-                <p>3b. Under "Set permissions boundary", select "Create user without a permissions boundary."</p>
+                <p>3b. Under "Set permissions boundary," select "Create user without a permissions boundary."</p>
                 <p>Click "Next: Review."</p>
                 <br>
                 <img src="./public/images/02/06/IAM/creating_IAM_user_02_02_Permissions.jpg" alt="">

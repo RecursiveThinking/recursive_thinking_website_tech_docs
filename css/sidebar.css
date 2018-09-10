@@ -57,9 +57,13 @@
     color: #ffffff;
 }
 
-.sidebar article span a:hover {
-    color: rgb(70, 233, 255);
+.hidden {
+    display: none;
 }
+
+/* .sidebar article span a:hover {
+    color: rgb(70, 233, 255);
+} */
 /* 
 /* to hide class, not being used.*/
 /* .start-hide {
@@ -70,6 +74,8 @@
     margin: 0 5%;
     padding: 2rem 0 2rem 0;
 } 
+
+
 
 .front-hide {
     display: none;
