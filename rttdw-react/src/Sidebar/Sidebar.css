@@ -1,0 +1,50 @@
+.Sidebar {
+  margin-top: 83px;
+  width: 20%;
+  min-width: 190px;
+  height: 100vh;
+  background-color: #2d3134;
+  font-size: 10px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  box-shadow: 2px 0 2px;
+  z-index: 50;
+}
+
+.mainLinkCategory, .subLinkCategory {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+}
+
+.mainLinkCategory:hover, .mainLinkCategory:active, .subLinkCategory:hover, .subLinkCategory:active,
+a:hover,
+a:active {
+  color: #027d50;
+  cursor: pointer;
+}
+
+.mainLinkCategory {
+  margin: 0 5%;
+  padding: 1rem 0;
+}
+
+.subLinkCategory {
+  padding-left: 3rem;
+}
+
+i {
+  margin-right: 2%;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+}

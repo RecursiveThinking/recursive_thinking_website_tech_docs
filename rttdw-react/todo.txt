@@ -1,0 +1,5 @@
+https://reacttraining.com/react-router/web/api/Redirect for routing
+
+modals on images
+show/hide button for big image
+clean up indentation

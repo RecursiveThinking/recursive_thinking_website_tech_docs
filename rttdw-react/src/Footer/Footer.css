@@ -1,0 +1,32 @@
+.Footer {
+  height: 8%;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 5000;
+  box-shadow: 0 -2px #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+.Icons, .Copyright {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.Copyright {
+  margin-left: 10px;
+}
+
+.Icons {
+  margin-right: 10px;
+}
+.github {
+  height: 30px;
+}
+
+.linkedIn {
+  height: 30px;
+  margin-left: 5px;
+}
